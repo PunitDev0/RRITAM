@@ -61,7 +61,7 @@ const notices = [
   },
   {
     title: "Loan Facility Available",
-    description: "EOI Registration Closed",
+    description: "EOI Registration Open",
     extra: "Loans provided in collaboration with partner banks.",
     borderColor: "border-green-500",
   },

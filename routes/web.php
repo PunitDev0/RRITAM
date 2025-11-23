@@ -7,9 +7,7 @@ use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\PaymentController;
 
-// ----------------------
-// Public routes
-// ----------------------
+
 Route::get('/', fn() => Inertia::render('welcome'))->name('home');
 
 
