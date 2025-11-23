@@ -1,0 +1,32 @@
+import '../css/app.css';
+// import '../css/style.css';
+import { createInertiaApp } from '@inertiajs/react';
+import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+import { createRoot } from 'react-dom/client';
+// import { initializeTheme } from './hooks/use-appearance';
+
+// Load environment app name or fallback
+const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+
+// Initialize theme (dark/light mode)
+// initializeTheme();
+
+createInertiaApp({
+    title: (title) => (title ? `${title} - ${appName}` : appName),
+
+    resolve: (name) =>
+        resolvePageComponent(
+            `./pages/${name}.jsx`,
+            import.meta.glob('./pages/**/*.jsx'),
+        ),
+
+    setup({ el, App, props }) {
+        const root = createRoot(el);
+        root.render(<App {...props} />);
+    },
+
+    progress: {
+        color: '#4B5563', // Customize Inertia progress bar color
+        showSpinner: true, // Optional: shows spinner on page load
+    },
+});
