@@ -144,8 +144,8 @@ class PaymentController extends Controller
                     'DD-0577' => ['name' => 'DEEPAK SINGH', 'phone' => '7494941002'],
                     'DD-1018' => ['name' => 'POONAM YADAV', 'phone' => '8800710249'],
                     'DD-2602' => ['name' => 'SACHIN KHALDALWAL', 'phone' => '9971331667'],
-                    'DD-3169' => ['name' => 'Dev Sharma', 'phone' => '9999355215'],
-                    'DD-8462' => ['name' => 'Deepti Vashisht', 'phone' => '9870368462'],
+                    'DD-3169' => ['name' => 'Kunal Sharma', 'phone' => '9999355215'],
+                    // 'DD-8462' => ['name' => 'Deepti Vashisht', 'phone' => '9870368462'],
                     'DD-1562' => ['name' => 'Shanaya Kaur', 'phone' => '8076127927'],
                 ];
 

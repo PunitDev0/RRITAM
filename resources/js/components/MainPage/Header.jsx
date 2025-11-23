@@ -4,11 +4,11 @@ import { Check, Menu, X } from "lucide-react";
 
 const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClick }) => {
   const navItems = [
-    { label: "Site Plan", link: "#siteplan" },
-    { label: "Brochure", link: "#brochure" },
-    { label: "HRERA License", link: "#hrera" },
-    { label: "Project License", link: "#license" },
-    { label: "Price List", link: "#pricelist" },
+    // { label: "Site Plan", link: "#siteplan" },
+    { label: "Brochure", link: "/images/brochure.jpeg" },
+    { label: "HRERA License", link: "/images/rera.pdf" },
+    { label: "Grasso License", link: "/images/RritamrealityGrassoLicense.pdf" },
+    { label: "Price List", link: "/images/pricelist.pdf" },
   ];
 
   return (
@@ -25,7 +25,7 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
       </div>
 
       {/* Main Header */}
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 md:px-6">
+      <div className=" mx-auto flex items-center justify-between py-3 px-4 md:px-6">
         {/* Logos */}
         <div className="flex items-center gap-3 sm:gap-6">
           <a href="/"><img src="images/DDJAY_logo.jpg" alt="Logo" className="h-12 w-auto" /></a>
@@ -39,7 +39,12 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
             <a
               key={i}
               href={item.link}
-              onClick={(e) => handleNavLinkClick(e, item.link)}
+              onClick={(e) => {
+                // Only smooth-scroll for internal section links starting with "#"
+                if (item.link.startsWith("#")) {
+                  handleNavLinkClick(e, item.link);
+                }
+              }}
               className="flex items-center gap-1 font-medium text-gray-800 hover:text-green-600 transition"
             >
               <Check className="h-4 w-4 text-green-600" />

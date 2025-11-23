@@ -200,10 +200,10 @@ const App = ({ flash }) => {
         <GalleryComponent />
         <ProjectHighlights />
         <SiteMap/>
-        <PriceList />
-        <LocationAdvantages />
-        <AboutDDJAY />
-        <Footer />
+        <PriceList/>
+        <LocationAdvantages/>
+        <AboutDDJAY/>
+        <Footer/>
       </div>
 
       {/* Registration Modal */}
