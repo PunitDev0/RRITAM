@@ -56,7 +56,7 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
             onClick={openRegistrationModal}
             className="rounded-full bg-[#4285f4] hover:bg-blue-700 text-white px-6"
           >
-            EOI Registration Open
+             Registration Open
           </Button>
         </nav>
 
@@ -91,7 +91,7 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
               }}
               className="w-full rounded-full bg-[#4285f4] hover:bg-blue-700"
             >
-              EOI Registration Open
+               Registration Open
             </Button>
           </div>
         </div>

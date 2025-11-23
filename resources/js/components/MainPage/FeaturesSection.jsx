@@ -32,7 +32,8 @@ function CountdownTimer() {
     return <p className="text-green-600 text-xs">Registration Started!</p>;
 
   return (
-    <div className="text-[18px] sm:text-[25px] font-semibold text-red-600 mt-1">
+    <div className="text-[18px] sm:text-[22px] font-semibold text-red-600 mt-2">
+      <p className="text-black text-[15px] -mb-3">Registration Ends In</p>
       {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
       {timeLeft.seconds}s
     </div>
@@ -41,15 +42,15 @@ function CountdownTimer() {
 
 const notices = [
   {
-    title: "Registration Starts From - 14 December 2025",
-    description: "Registration Open.",
+    title: "Registration Last Date - 14 December 2025",
+    // description: "Registration Open.",
     countdown: true,
     extra: "Please check our website for future updates.",
     borderColor: "border-green-500",
   },
   {
     title: "Registration Opened",
-    description: "Allotment Last Date 18 December",
+    description: "Allotment Last Date 18 December 2025",
     extra: "Stay tuned for the next registration cycle.",
     borderColor: "border-gray-500",
   },
@@ -61,7 +62,7 @@ const notices = [
   },
   {
     title: "Loan Facility Available",
-    description: "EOI Registration Open",
+    description: " Registration Open",
     extra: "Loans provided in collaboration with partner banks.",
     borderColor: "border-green-500",
   },
@@ -73,13 +74,17 @@ export default function FeaturesSection() {
       {notices.map((notice, index) => (
         <div
           key={index}
-          className={`bg-white shadow-md border-2 ${notice.borderColor} h-auto sm:h-40 p-3 sm:p-4 flex flex-col hover:shadow-lg transition-shadow duration-300 rounded-lg`}
+          className={`bg-white shadow-md border-2 ${notice.borderColor} h-auto sm:h-40 p-3 sm:p-4 flex flex-col hover:shadow-lg transition-shadow duration-300 `}
         >
           <h5 className="text-[11px] sm:text-xs font-semibold mb-1 sm:mb-2 text-gray-800 leading-snug">
             {notice.title}
           </h5>
 
-          {notice.countdown && <CountdownTimer />}
+          {notice.countdown &&
+          
+          <CountdownTimer />
+          
+          }
 
           {notice.description && (
             <p className="text-[15px] sm:text-[18px] text-gray-600 leading-tight">

@@ -17,7 +17,7 @@ const MainContent = ({
                   <div className="bg-blue-100 p-4 mt-4 rounded text-center text-black">
                     <h2 className="text-2xl font-bold">Elite Homes + O2 Home | Most Affordable Plots in Sonipat</h2>
                     <p>Under Deen Dayal Jan Awas Yojna at Sector-24 Haryana</p>
-                    <p className="mt-4 font-bold">EOI REGISTRATION AMOUNT</p>
+                    <p className="mt-4 font-bold"> REGISTRATION AMOUNT</p>
                     <p className="text-3xl font-bold text-blue-600">₹ 31,000 /-</p>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const MainContent = ({
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
               <h2 className="h4 h2-md mb-3">Deen Dayal Jan Awas Yojana Affordable Residential Plots</h2>
               <a href="#" className="btn btn-danger px-4 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#registrationModal">
-                EOI Registration Open
+                 Registration Open
               </a>
             </div>
             <div className="col-md-6 text-center">
@@ -153,7 +153,7 @@ const MainContent = ({
                       <th className="main-th">UNIT SIZE(Sq.yd)</th>
                       <th className="main-th">UNIT PRICE(in Rs. Per Sq.yd.)</th>
                       <th className="main-th">Total Cost*</th>
-                      <th className="main-th">EOI Registration Amount</th>
+                      <th className="main-th">Registration Amount</th>
                       <th className="main-th">10% On Allotment</th>
                       <th className="main-th">40% within 30 days of Allotment or at the time of BBA Execution</th>
                       <th className="main-th">25% within 90 days of Allotment</th>
