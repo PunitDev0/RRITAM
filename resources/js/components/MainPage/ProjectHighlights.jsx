@@ -7,7 +7,7 @@
       { label: "Payment Plan", value: "10:40:30:20" },
       {
         label: "HRERA-NO",
-        value: "HRERA-PKL-SP-741-2025 dated on 11-08-2025",
+        value: "HRERA-PKL-SNP-741-2025 dated on 11-08-2025",
       },
     ];
 

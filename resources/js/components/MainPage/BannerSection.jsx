@@ -47,7 +47,7 @@ export default function BannerSection({ openRegistrationModal }) {
               </h2>
 
               <p className="text-lg text-white font-medium">
-                HRERA-PKL-SP-741-2025 dated on 11.08.2025
+                HRERA-PKL-SNP-741-2025 dated on 11.08.2025
               </p>
 
               <p className="text-green-300 text-xl font-bold tracking-wide">

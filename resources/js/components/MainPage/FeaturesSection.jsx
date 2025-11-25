@@ -56,7 +56,7 @@ const notices = [
   },
   {
     title: "Attractive Payment Plan",
-    description: "HRERA-PKL-SP-741-2025",
+    description: "HRERA-PKL-SNP-741-2025",
     extra: "EMI options available up to 12 months.",
     borderColor: "border-blue-500",
   },

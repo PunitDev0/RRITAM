@@ -41,9 +41,9 @@
             We are pleased to confirm the receipt of your registration amount of
             <span class="highlight">₹ 31000/-</span>
             with application no. DDJAY - 22<strong>{{ $registration->id }}</strong>
-            for the <strong>Aaranya Greens</strong> residential project, located at
-            <strong>Sector 35, Sonipat, Haryana</strong>
-            (HERERA Registration No.: <strong>PKL-SNP-675-2025</strong>).
+            for the <strong>RRITAM PEACE VALLEY</strong> residential project, located at
+            <strong>Sector 80, Sonipat, Haryana</strong>
+            (HERERA Registration No.: <strong>PKL-SNP-741-2025</strong>).
             For the plot measuring <strong>{{ $registration->size }} square yards</strong>
             under the <strong>{{ $registration->quota }}</strong> Quota.
         </p>
@@ -73,7 +73,7 @@
 
         <p>Thank you.</p>
 
-        <p><strong>Warm Regards,<br>Team Aaranya Greens</strong></p>
+        <p><strong>Warm Regards,<br>Team Rritam Peace Valley </strong></p>
     </div>
 </body>
 
