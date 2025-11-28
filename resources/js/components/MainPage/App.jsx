@@ -262,7 +262,7 @@ const App = ({ flash }) => {
                   value={enquiryForm.email}
                   onChange={handleEnquiryChange}
                   className={`form-control ${enquiryErrors.email ? 'is-invalid' : ''}`}
-                  placeholder="Email (Optional)"
+                  placeholder="Email"
                 />
                 {enquiryErrors.email && <div className="invalid-feedback">{enquiryErrors.email}</div>}
               </div>
