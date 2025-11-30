@@ -104,7 +104,7 @@ class RegistrationController extends Controller
                 'country' => 'India',
                 'zipcode' => $validatedData['pincode'] ?? '',
             ];
-            dd($postData);
+            // dd($postData);
 
             Log::info('Easebuzz Payment Initiation', ['registration_id' => $registrationId, 'postData' => $postData]);
             $result = $easebuzz->initiatePaymentAPI($postData, false);
