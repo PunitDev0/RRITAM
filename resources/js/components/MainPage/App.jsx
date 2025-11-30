@@ -122,9 +122,67 @@ const App = ({ flash }) => {
   };
 
   // Registration Form (unchanged)
-  const validateRegForm = () => { /* ... your existing validation ... */ };
-  const handleRegFormChange = (e) => { /* ... */ };
-  const handleRegFormSubmit = async (e) => { /* ... */ };
+const validateRegForm = () => {
+    const errors = {};
+    if (!regForm.applicant_name) errors.applicant_name = 'Applicant Name is required';
+    if (!regForm.father_or_husband_name) errors.father_or_husband_name = 'Father/Husband Name is required';
+    if (!regForm.dob) errors.dob = 'Date of Birth is required';
+    if (!regForm.phone || !/^[0-9]{10}$/.test(regForm.phone)) errors.phone = 'Valid 10-digit phone required';
+    if (!regForm.email || !/\S+@\S+\.\S+/.test(regForm.email)) errors.email = 'Valid email required';
+    if (regForm.aadhaar && !/^[0-9]{12}$/.test(regForm.aadhaar)) errors.aadhaar = 'Valid 12-digit Aadhaar required';
+    if (!regForm.pan || !/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/.test(regForm.pan)) errors.pan = 'Valid PAN required';
+    if (!regForm.address) errors.address = 'Address is required';
+    if (!regForm.city) errors.city = 'City is required';
+    if (!regForm.pincode || !/^[0-9]{6}$/.test(regForm.pincode)) errors.pincode = 'Valid 6-digit pincode required';
+    if (!regForm.state) errors.state = 'State is required';
+    if (!regForm.quota) errors.quota = 'Quota is required';
+    if (!regForm.size) errors.size = 'Size selection is required';
+    if (!regForm.rmcode) errors.rmcode = 'RM Code is required';
+    if (!regForm.terms) errors.terms = 'You must agree to Terms & Conditions';
+    return errors;
+  };
+
+  const handleRegFormChange = (e) => {
+    const { name, value, type, checked } = e.target || e;
+    setRegForm(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+    if (regFormErrors[name]) {
+      setRegFormErrors(prev => ({ ...prev, [name]: '' }));
+    }
+  };
+
+  const handleRegFormSubmit = async (e) => {
+    e.preventDefault();
+    const errors = validateRegForm();
+    if (Object.keys(errors).length > 0) {
+      setRegFormErrors(errors);
+      return;
+    }
+
+    try {
+      const response = await axios.post('/api/register', regForm);
+      if (response.data.success && response.data.payment_url) {
+        const modal = bootstrap.Modal.getInstance(document.getElementById('registrationModal'));
+        modal.hide();
+        setRegForm({
+          applicant_name: '', father_or_husband_name: '', dob: '', phone: '', email: '',
+          aadhaar: '', pan: '', address: '', city: '', pincode: '', state: '',
+          quota: '', size: '', rmcode: '', terms: false,
+        });
+        setRegFormErrors({});
+        window.location.href = response.data.payment_url;
+      }
+    } catch (error) {
+      console.error(error);
+      if (error.response?.data?.errors) {
+        setRegFormErrors(error.response.data.errors);
+      } else {
+        alert('Registration failed. Please try again.');
+      }
+    }
+  };
 
   // Quick Enquiry Validation & Submit
   const validateEnquiry = () => {

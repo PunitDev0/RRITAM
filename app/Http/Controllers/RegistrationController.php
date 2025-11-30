@@ -50,9 +50,9 @@ class RegistrationController extends Controller
                 $validated
             );
 
-            if (!$paymentUrl) {
-                throw new \Exception('Payment initiation failed.');
-            }
+            // if (!$paymentUrl) {
+            //     throw new \Exception('Payment initiation failed.');
+            // }
 
             return response()->json([
                 'success' => true,
@@ -104,6 +104,7 @@ class RegistrationController extends Controller
                 'country' => 'India',
                 'zipcode' => $validatedData['pincode'] ?? '',
             ];
+            dd($postData);
 
             Log::info('Easebuzz Payment Initiation', ['registration_id' => $registrationId, 'postData' => $postData]);
             $result = $easebuzz->initiatePaymentAPI($postData, false);
