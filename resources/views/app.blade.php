@@ -9,6 +9,16 @@
         <meta property="og:url" content="https://deendayaljanawasyojnareg.org">
         <meta property="og:type" content="website">
 
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KNDM0CBL2J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KNDM0CBL2J');
+</script>
+
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
             (function() {
