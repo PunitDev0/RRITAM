@@ -151,6 +151,7 @@ class PaymentController extends Controller
                     'DD-6666' => ['name' => 'Saksham chhabra', 'phone' => '9910666013'],
                     // 'DD-2308' => ['name' => 'Rishi Grewal', 'phone' => '9728939284'],
                     'DD-7836' => ['name' => 'Ritik Vasishth', 'phone' => '9053547836'],
+                    'DD-9733' => ['name' => 'Vipin Makhija', 'phone' => '9582206501'],
                 ];
 
                 $rm = $rmMapping[$registration->rmcode] ?? ['name' => 'Not Assigned', 'phone' => 'Not Available'];
