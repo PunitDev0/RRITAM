@@ -8,16 +8,15 @@
         <meta property="og:image" content="https://deendayaljanawasyojnareg.org/images/logo.png">
         <meta property="og:url" content="https://deendayaljanawasyojnareg.org">
         <meta property="og:type" content="website">
-
         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KNDM0CBL2J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPH07GET36"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-KNDM0CBL2J');
-</script>
+        gtag('config', 'G-LPH07GET36');
+        </script>
 
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
