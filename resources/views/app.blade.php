@@ -25,6 +25,16 @@
         })(window,document,'script','dataLayer','GTM-PX6JNMMF');</script>
         <!-- End Google Tag Manager -->
 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPH07GET36"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LPH07GET36');
+        </script>
+
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
             (function() {
