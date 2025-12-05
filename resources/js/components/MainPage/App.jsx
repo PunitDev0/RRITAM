@@ -38,7 +38,7 @@ const App = ({ flash }) => {
 
   // Quick Enquiry Popup
   const [showEnquiryPopup, setShowEnquiryPopup] = useState(false);
-  const [enquiryForm, setEnquiryForm] = useState({ name: '', email: '', phone: '' });
+  const [enquiryForm, setEnquiryForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [enquiryErrors, setEnquiryErrors] = useState({});
   const [enquirySubmitting, setEnquirySubmitting] = useState(false);
   const toastRef = useRef(null);
@@ -54,11 +54,11 @@ const App = ({ flash }) => {
 
   // Auto-open enquiry popup (only once per session)
   useEffect(() => {
-      const timer = setTimeout(() => {
-        setShowEnquiryPopup(true);
-        sessionStorage.setItem('enquiryPopupSeen', 'true');
-      }, 1500);
-      return () => clearTimeout(timer);
+    const timer = setTimeout(() => {
+      setShowEnquiryPopup(true);
+      sessionStorage.setItem('enquiryPopupSeen', 'true');
+    }, 1500);
+    return () => clearTimeout(timer);
   }, []);
 
   // Initialize Toast
@@ -122,7 +122,7 @@ const App = ({ flash }) => {
   };
 
   // Registration Form (unchanged)
-const validateRegForm = () => {
+  const validateRegForm = () => {
     const errors = {};
     if (!regForm.applicant_name) errors.applicant_name = 'Applicant Name is required';
     if (!regForm.father_or_husband_name) errors.father_or_husband_name = 'Father/Husband Name is required';
@@ -222,7 +222,7 @@ const validateRegForm = () => {
       await axios.post('/enquiry', enquiryForm);
 
       showToast('Thank you! We will contact you shortly.', true);
-      setEnquiryForm({ name: '', email: '', phone: '' });
+      setEnquiryForm({ name: '', email: '', phone: '', message: '' });
       setEnquiryErrors({});
       setShowEnquiryPopup(false);
     } catch (err) {
@@ -232,6 +232,7 @@ const validateRegForm = () => {
       setEnquirySubmitting(false);
     }
   };
+
 
   return (
     <>
@@ -282,13 +283,19 @@ const validateRegForm = () => {
 
       {/* Enquiry Popup */}
       {showEnquiryPopup && (
-        <div className="position-fixed inset-0 d-flex align-items-center justify-content-center" style={{ zIndex: 9999, background: 'rgba(0,0,0,0.7)' }} onClick={() => setShowEnquiryPopup(false)}>
-          <div className="bg-white shadow-lg p-4 mx-3" style={{ maxWidth: '440px', width: '100%' }} onClick={e => e.stopPropagation()}>
-            <div className="d-flex justify-content-between align-items-center mb-4">
-              <h4 className="mb-0 text-primary fw-bold">Quick Enquiry</h4>
+        <div className="position-fixed inset-0 d-flex align-items-center justify-content-center"
+          style={{ zIndex: 9999, background: 'rgba(0,0,0,0.7)' }}
+          onClick={() => setShowEnquiryPopup(false)}
+        >
+          <div className="bg-white shadow-lg p-4 mx-3"
+            style={{ maxWidth: '460px', width: '100%' }}
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="d-flex justify-content-between align-items-center mb-3">
+              <h4 className="mb-0 fw-bold text-primary">Quick Enquiry</h4>
               <button className="btn-close" onClick={() => setShowEnquiryPopup(false)}></button>
             </div>
-            {/* <p className="text-muted small mb-4">Get a call back in 5 minutes!</p> */}
+
             <form onSubmit={handleEnquirySubmit}>
               <div className="mb-3">
                 <input
@@ -296,43 +303,58 @@ const validateRegForm = () => {
                   name="name"
                   value={enquiryForm.name}
                   onChange={handleEnquiryChange}
-                  className={`form-control ${enquiryErrors.name ? 'is-invalid' : ''}`}
+                  className={`form-control ${enquiryErrors.name ? "is-invalid" : ""}`}
                   placeholder="Your Name *"
                 />
                 {enquiryErrors.name && <div className="invalid-feedback">{enquiryErrors.name}</div>}
               </div>
+
               <div className="mb-3">
                 <input
                   type="tel"
                   name="phone"
                   value={enquiryForm.phone}
                   onChange={handleEnquiryChange}
-                  className={`form-control ${enquiryErrors.phone ? 'is-invalid' : ''}`}
+                  className={`form-control ${enquiryErrors.phone ? "is-invalid" : ""}`}
                   placeholder="Mobile Number *"
                   maxLength="10"
                 />
                 {enquiryErrors.phone && <div className="invalid-feedback">{enquiryErrors.phone}</div>}
               </div>
-              <div className="mb-4">
+
+              <div className="mb-3">
                 <input
                   type="email"
                   name="email"
                   value={enquiryForm.email}
                   onChange={handleEnquiryChange}
-                  className={`form-control ${enquiryErrors.email ? 'is-invalid' : ''}`}
+                  className={`form-control ${enquiryErrors.email ? "is-invalid" : ""}`}
                   placeholder="Email"
                 />
                 {enquiryErrors.email && <div className="invalid-feedback">{enquiryErrors.email}</div>}
               </div>
+
+              <div className="mb-4">
+                <textarea
+                  name="message"
+                  rows="3"
+                  value={enquiryForm.message}
+                  onChange={handleEnquiryChange}
+                  className={`form-control ${enquiryErrors.message ? "is-invalid" : ""}`}
+                  placeholder="Your Message (Optional)"
+                ></textarea>
+              </div>
+
+
               <button
                 type="submit"
                 disabled={enquirySubmitting}
                 className="btn btn-primary w-100 fw-bold py-3"
-                style={{ backgroundColor: '#2563eb', border: 'none' }}
               >
-                {enquirySubmitting ? 'Submitting...' : 'Submit'}
+                {enquirySubmitting ? "Submitting..." : "Submit"}
               </button>
             </form>
+
           </div>
         </div>
       )}

@@ -10,6 +10,7 @@ class Enquiry extends Model
         'name',
         'email',
         'phone',
+        'message',
     ];
 
     protected $casts = [
