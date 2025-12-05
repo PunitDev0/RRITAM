@@ -1,258 +1,272 @@
-import React, { useEffect, useRef } from 'react';
-import flatpickr from 'flatpickr';
+import React, { useEffect } from "react";
+import flatpickr from "flatpickr";
 
-const RegistrationModal = ({ 
-  regForm, 
-  regFormErrors, 
-  handleRegFormChange, 
-  handleRegFormSubmit, 
-  validateRegForm,
-  dobInputRef 
+const RegistrationModal = ({
+  regForm,
+  regFormErrors,
+  handleRegFormChange,
+  handleRegFormSubmit,
+  dobInputRef,
 }) => {
+
   useEffect(() => {
     if (dobInputRef.current) {
       const fp = flatpickr(dobInputRef.current, {
-        maxDate: 'today',
-        dateFormat: 'Y-m-d',
+        maxDate: "today",
+        dateFormat: "Y-m-d",
         defaultDate: regForm.dob || null,
         onChange: (selectedDates, dateStr) => {
-          handleRegFormChange({ target: { name: 'dob', value: dateStr } });
+          handleRegFormChange({ target: { name: "dob", value: dateStr } });
         },
-        onReady: () => console.log('Flatpickr initialized'),
-        onError: (error) => console.error('Flatpickr error:', error),
       });
+
       return () => fp.destroy();
     }
-  }, [ dobInputRef]);
+  }, [dobInputRef]);
 
   return (
-    <div className="modal fade" id="registrationModal" tabIndex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div className="modal fade" id="registrationModal" tabIndex="-1" aria-hidden="true">
       <div className="modal-dialog modal-xl modal-dialog-scrollable">
         <div className="modal-content">
+
           <div className="modal-header">
-            <h5 className="modal-title" id="registrationModalLabel">Registration Form</h5>
-            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 className="modal-title">Registration Form</h5>
+            <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
           </div>
+
           <div className="modal-body">
             <form onSubmit={handleRegFormSubmit}>
               <div className="row g-3">
+
+                {/* Applicant Name */}
                 <div className="col-md-6">
                   <label className="form-label">Applicant Name</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.applicant_name ? 'is-invalid' : ''}`}
-                    placeholder="Enter Name"
                     name="applicant_name"
+                    placeholder="Enter Name"
+                    className={`form-control ${regFormErrors.applicant_name ? "is-invalid" : ""}`}
                     value={regForm.applicant_name}
                     onChange={handleRegFormChange}
                     required
                   />
-                  {regFormErrors.applicant_name && <div className="invalid-feedback">{regFormErrors.applicant_name}</div>}
                 </div>
+
+                {/* Father/Husband Name */}
                 <div className="col-md-6">
-                  <label className="form-label">Father's Name/Husband Name</label>
+                  <label className="form-label">Father's/Husband's Name</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.father_or_husband_name ? 'is-invalid' : ''}`}
-                    placeholder="Father's Name/Husband Name"
                     name="father_or_husband_name"
+                    placeholder="Father/Husband Name"
+                    className={`form-control ${regFormErrors.father_or_husband_name ? "is-invalid" : ""}`}
                     value={regForm.father_or_husband_name}
                     onChange={handleRegFormChange}
                     required
                   />
-                  {regFormErrors.father_or_husband_name && <div className="invalid-feedback">{regFormErrors.father_or_husband_name}</div>}
                 </div>
+
+                {/* Date of Birth */}
                 <div className="col-md-6">
                   <label className="form-label">Date of Birth</label>
                   <input
                     type="text"
-                    id="dobInput"
-                    className={`form-control ${regFormErrors.dob ? 'is-invalid' : ''}`}
                     name="dob"
+                    placeholder="YYYY-MM-DD"
+                    ref={dobInputRef}
                     value={regForm.dob}
                     onChange={handleRegFormChange}
-                    ref={dobInputRef}
-                    placeholder="YYYY-MM-DD"
+                    className={`form-control ${regFormErrors.dob ? "is-invalid" : ""}`}
                     required
-                    aria-label="Date of Birth"
-                    aria-describedby="dobError"
                   />
-                  {regFormErrors.dob && <div id="dobError" className="invalid-feedback">{regFormErrors.dob}</div>}
                 </div>
+
+                {/* Phone Number */}
                 <div className="col-md-6">
                   <label className="form-label">Phone Number</label>
                   <input
                     type="tel"
-                    className={`form-control ${regFormErrors.phone ? 'is-invalid' : ''}`}
-                    placeholder="98xxxxxxxx"
                     name="phone"
+                    placeholder="98xxxxxxxx"
+                    pattern="[0-9]{10}"
+                    className={`form-control ${regFormErrors.phone ? "is-invalid" : ""}`}
                     value={regForm.phone}
                     onChange={handleRegFormChange}
-                    pattern="[0-9]{10}"
                     required
                   />
-                  {regFormErrors.phone && <div className="invalid-feedback">{regFormErrors.phone}</div>}
                 </div>
+
+                {/* Email */}
                 <div className="col-md-6">
-                  <label className="form-label">Email Address</label>
+                  <label className="form-label">Email</label>
                   <input
                     type="email"
-                    className={`form-control ${regFormErrors.email ? 'is-invalid' : ''}`}
-                    placeholder="example@example.com"
                     name="email"
+                    placeholder="example@example.com"
+                    className={`form-control ${regFormErrors.email ? "is-invalid" : ""}`}
                     value={regForm.email}
                     onChange={handleRegFormChange}
                     required
                   />
-                  {regFormErrors.email && <div className="invalid-feedback">{regFormErrors.email}</div>}
                 </div>
+
+                {/* Aadhaar */}
                 <div className="col-md-6">
-                  <label className="form-label">Aadhaar Card Number (Optional)</label>
+                  <label className="form-label">Aadhaar Card Number</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.aadhaar ? 'is-invalid' : ''}`}
-                    placeholder="xxxx-xxxx-xxxx"
                     name="aadhaar"
+                    placeholder="xxxx xxxx xxxx"
+                    pattern="[0-9]{12}"
+                    className={`form-control ${regFormErrors.aadhaar ? "is-invalid" : ""}`}
                     value={regForm.aadhaar}
                     onChange={handleRegFormChange}
+                    required
                   />
-                  {regFormErrors.aadhaar && <div className="invalid-feedback">{regFormErrors.aadhaar}</div>}
                 </div>
+
+                {/* PAN */}
                 <div className="col-md-6">
                   <label className="form-label">PAN Card Number</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.pan ? 'is-invalid' : ''}`}
-                    placeholder="e.g. ABCDE1234F"
                     name="pan"
+                    placeholder="ABCDE1234F"
+                    pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+                    className={`form-control ${regFormErrors.pan ? "is-invalid" : ""}`}
                     value={regForm.pan}
                     onChange={handleRegFormChange}
-                    pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
                     required
                   />
-                  {regFormErrors.pan && <div className="invalid-feedback">{regFormErrors.pan}</div>}
                 </div>
+
+                {/* Address */}
                 <div className="col-md-6">
                   <label className="form-label">Address</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.address ? 'is-invalid' : ''}`}
-                    placeholder="Address"
                     name="address"
+                    className={`form-control ${regFormErrors.address ? "is-invalid" : ""}`}
                     value={regForm.address}
                     onChange={handleRegFormChange}
                     required
                   />
-                  {regFormErrors.address && <div className="invalid-feedback">{regFormErrors.address}</div>}
                 </div>
+
+                {/* City */}
                 <div className="col-md-6">
                   <label className="form-label">City</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.city ? 'is-invalid' : ''}`}
-                    placeholder="City"
                     name="city"
+                    className={`form-control ${regFormErrors.city ? "is-invalid" : ""}`}
                     value={regForm.city}
                     onChange={handleRegFormChange}
                     required
                   />
-                  {regFormErrors.city && <div className="invalid-feedback">{regFormErrors.city}</div>}
                 </div>
+
+                {/* Pincode */}
                 <div className="col-md-6">
                   <label className="form-label">Pincode</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.pincode ? 'is-invalid' : ''}`}
-                    placeholder="Pincode"
                     name="pincode"
+                    pattern="[0-9]{6}"
+                    className={`form-control ${regFormErrors.pincode ? "is-invalid" : ""}`}
                     value={regForm.pincode}
                     onChange={handleRegFormChange}
-                    pattern="[0-9]{6}"
                     required
                   />
-                  {regFormErrors.pincode && <div className="invalid-feedback">{regFormErrors.pincode}</div>}
                 </div>
+
+                {/* State */}
                 <div className="col-md-6">
                   <label className="form-label">State</label>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.state ? 'is-invalid' : ''}`}
-                    placeholder="State"
                     name="state"
+                    className={`form-control ${regFormErrors.state ? "is-invalid" : ""}`}
                     value={regForm.state}
                     onChange={handleRegFormChange}
                     required
                   />
-                  {regFormErrors.state && <div className="invalid-feedback">{regFormErrors.state}</div>}
                 </div>
+
+                {/* Quota */}
                 <div className="col-md-6">
                   <label className="form-label">Quota</label>
                   <select
-                    className={`form-control ${regFormErrors.quota ? 'is-invalid' : ''}`}
                     name="quota"
+                    className={`form-control ${regFormErrors.quota ? "is-invalid" : ""}`}
                     value={regForm.quota}
                     onChange={handleRegFormChange}
                     required
                   >
-                    <option value="" disabled>Select Quota</option>
-                    <option value="Female Applicant">Female Applicant</option>
-                    <option value="Govt Employee Applicant">Govt Employee Applicant</option>
-                    <option value="General Applicant">General Applicant</option>
-                    <option value="Management Quota Applicant">Management Quota Applicant</option>
+                    <option value="">Select Quota</option>
+                    <option>Female Applicant</option>
+                    <option>Govt Employee Applicant</option>
+                    <option>General Applicant</option>
+                    <option>Management Quota Applicant</option>
                   </select>
-                  {regFormErrors.quota && <div className="invalid-feedback">{regFormErrors.quota}</div>}
                 </div>
+
+                {/* Size */}
                 <div className="col-md-12">
                   <label className="form-label">Select Size</label>
                   <select
-                    className={`form-control ${regFormErrors.size ? 'is-invalid' : ''}`}
                     name="size"
+                    className={`form-control ${regFormErrors.size ? "is-invalid" : ""}`}
                     value={regForm.size}
                     onChange={handleRegFormChange}
                     required
                   >
-                    <option value="" disabled>Select Size</option>
+                    <option value="">Select Size</option>
                     <option value="145.697 @ 80000">145.697 @ 80000</option>
                     <option value="158.159 @ 80000">158.159 @ 80000</option>
                     <option value="162.077 @ 80000">162.077 @ 80000</option>
                     <option value="167.233 @ 80000">167.233 @ 80000</option>
                     <option value="179.395 @ 80000">179.395 @ 80000</option>
                   </select>
-                  {regFormErrors.size && <div className="invalid-feedback">{regFormErrors.size}</div>}
                 </div>
+
+                {/* RM Code */}
                 <div className="col-md-12 pt-3">
                   <label className="form-label">RM Code</label>
-                  <span style={{ color: 'red', fontSize: '10px' }}>(RM Code is Mandatory)</span>
                   <input
                     type="text"
-                    className={`form-control ${regFormErrors.rmcode ? 'is-invalid' : ''}`}
-                    placeholder="RM Code"
                     name="rmcode"
+                    placeholder="RM Code"
+                    className={`form-control ${regFormErrors.rmcode ? "is-invalid" : ""}`}
                     value={regForm.rmcode}
                     onChange={handleRegFormChange}
                     required
                   />
-                  {regFormErrors.rmcode && <div className="invalid-feedback">{regFormErrors.rmcode}</div>}
                 </div>
+
+                {/* Terms */}
                 <div className="form-check mt-4">
                   <input
-                    className={`form-check-input ${regFormErrors.terms ? 'is-invalid' : ''}`}
                     type="checkbox"
-                    id="termsCheck"
                     name="terms"
                     checked={regForm.terms}
+                    className={`form-check-input ${regFormErrors.terms ? "is-invalid" : ""}`}
                     onChange={handleRegFormChange}
                     required
                   />
-                  <label className="form-check-label" htmlFor="termsCheck">
-                    By clicking checkbox, you agree to the <a href="terms.php" target="_blank">Terms and Conditions</a> set out by this site.
+                  <label className="form-check-label">
+                    I agree to the <a href="/terms" target="_blank">Terms & Conditions</a>
                   </label>
-                  {regFormErrors.terms && <div className="invalid-feedback">{regFormErrors.terms}</div>}
                 </div>
-                <button type="submit" className="btn btn-primary mt-3">Submit & Pay</button>
+
+                <button type="submit" className="btn btn-primary mt-3">
+                  Submit & Pay
+                </button>
+
               </div>
             </form>
           </div>
+
         </div>
       </div>
     </div>
