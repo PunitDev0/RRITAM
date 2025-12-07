@@ -27,7 +27,7 @@ class RegistrationConfirmation extends Mailable
      */
     public function build()
     {
-        return $this->subject('Aaranya Greens Registration Confirmation')
+        return $this->subject('RRITAM PEACE VALLEY Registration Confirmation')
                     ->view('emails.registration_confirmation');
     }
 }
