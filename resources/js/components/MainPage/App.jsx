@@ -219,7 +219,7 @@ const App = ({ flash }) => {
 
     setEnquirySubmitting(true);
     try {
-      await axios.post('/enquiry', enquiryForm);
+      await axios.post('/api/enquiry', enquiryForm);
 
       showToast('Thank you! We will contact you shortly.', true);
       setEnquiryForm({ name: '', email: '', phone: '', message: '' });
