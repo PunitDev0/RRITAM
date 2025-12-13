@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:title" content="दीन दयाल जन आवास योजना">
-        <meta property="og:description" content="सरकारी आवास योजना से जुड़ी आधिकारिक जानकारी">
         <meta property="og:image" content="https://deendayaljanawasyojnareg.org/images/og-banner.jpg">
         <meta property="og:url" content="https://deendayaljanawasyojnareg.org">
         <meta property="og:type" content="website">
