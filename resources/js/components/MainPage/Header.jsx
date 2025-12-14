@@ -56,7 +56,7 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
             // onClick={openRegistrationModal}
             className="rounded-full bg-[#4285f4] hover:bg-blue-700 text-white px-6"
           >
-             Registration Open
+             Registration Closed
           </Button>
         </nav>
 
