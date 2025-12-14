@@ -21,7 +21,7 @@ import LocationAdvantages from './LocationAdvantages';
 import GalleryComponent from './Gallery';
 import AboutDDJAY from './About-DDJAY';
 import Footer from './Footer';
-
+import NewsAdd from './news-add'
 const App = ({ flash }) => {
   const [countdown, setCountdown] = useState({ days: '00', hours: '00', minutes: '00', seconds: '00' });
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -259,6 +259,7 @@ const App = ({ flash }) => {
       <div>
         <BannerSection openRegistrationModal={openRegistrationModal} />
         <FeaturesSection />
+        <NewsAdd/>
         <ProjectIntro />
         <ApprovedBanks />
         <RegistrationBanner openRegistrationModal={openRegistrationModal} />
