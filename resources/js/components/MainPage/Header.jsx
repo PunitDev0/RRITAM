@@ -91,7 +91,7 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
               }}
               className="w-full rounded-full bg-[#4285f4] hover:bg-blue-700"
             >
-               Registration Open
+               Registration Closed
             </Button>
           </div>
         </div>
