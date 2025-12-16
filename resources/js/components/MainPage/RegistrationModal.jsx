@@ -197,18 +197,31 @@ const RegistrationModal = ({
                 <div className="col-md-6">
                   <label className="form-label">Quota</label>
                   <select
-                    name="quota"
-                    className={`form-control ${regFormErrors.quota ? "is-invalid" : ""}`}
-                    value={regForm.quota}
-                    onChange={handleRegFormChange}
-                    required
-                  >
-                    <option value="">Select Quota</option>
-                    {/* <option>Female Applicant</option>
-                    <option>Govt Employee Applicant</option>
-                    <option>General Applicant</option> */}
-                    <option>Management Quota Applicant</option>
-                  </select>
+  name="quota"
+  className={`form-control ${regFormErrors.quota ? "is-invalid" : ""}`}
+  value={regForm.quota}
+  onChange={handleRegFormChange}
+  required
+>
+  <option value="">Select Quota</option>
+
+  {/* ❌ CLOSED OPTIONS */}
+  <option value="Female Applicant" disabled>
+    Female Applicant (Closed)
+  </option>
+  <option value="Govt Employee Applicant" disabled>
+    Govt Employee Applicant (Closed)
+  </option>
+  <option value="General Applicant" disabled>
+    General Applicant (Closed)
+  </option>
+
+  {/* ✅ ONLY OPEN OPTION */}
+  <option value="Management Quota Applicant">
+    Management Quota Applicant
+  </option>
+</select>
+
                 </div>
 
                 {/* Size */}
