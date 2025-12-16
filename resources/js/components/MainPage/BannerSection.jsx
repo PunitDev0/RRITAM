@@ -23,19 +23,19 @@ export default function BannerSection({ openRegistrationModal }) {
 
           UNIT ALLOTMENT DATE:
           <span className="bg-yellow-400 text-black px-3 py-1 mx-2 rounded-sm blink-date">
-            18 December 2025
+            28 December 2025
           </span>
 
           LAST DATE OF APPLICATION:
           <span className="bg-red-600 text-white px-3 py-1 mx-2 font-bold blink-date rounded-sm">
-            14 December 2025
+            24 December 2025
           </span>
 
           Registration Amount is Fully Refundable for Unsuccessful Applicants Within 14 Working Days
         </marquee>
       </div>
       <div className="relative w-full" style={{ maxHeight: "70dvh" }}>
-        {/* Fixed overlay and text */} 
+        {/* Fixed overlay and text */}
         <div className="absolute top-0 left-0 w-full h-full z-50">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
 
@@ -58,15 +58,27 @@ export default function BannerSection({ openRegistrationModal }) {
                 (HARYANA GOVT. RESIDENTIAL PLOTS)
               </p>
 
-              <Button
-                // onClick={openRegistrationModal}
-                className="rounded-2xl bg-[#4285f4] text-white"
-              >
-                Register Closed
-              </Button>
+              {/* 👇 Button + Highlight Wrapper */}
+              <div className="flex flex-col items-center gap-4 pt-4">
+                <Button
+                  onClick={openRegistrationModal}
+                  className="rounded-2xl bg-[#4285f4] text-white cursor-not-allowed opacity-90"
+                >
+                  Register Open
+                </Button>
+
+                {/* 🔥 Highlight — button ke niche */}
+                <div
+                  className="px-6 py-2 translate-y-20 rounded-full bg-yellow-400 text-black 
+                   font-bold text-5xl tracking-wide shadow-md animate-pulse"
+                >
+                  ⚠️ ONLY UNDER MANAGEMENT QUOTA
+                </div>
+              </div>
 
             </div>
           </div>
+
         </div>
 
 

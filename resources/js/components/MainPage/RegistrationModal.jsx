@@ -204,9 +204,9 @@ const RegistrationModal = ({
                     required
                   >
                     <option value="">Select Quota</option>
-                    <option>Female Applicant</option>
+                    {/* <option>Female Applicant</option>
                     <option>Govt Employee Applicant</option>
-                    <option>General Applicant</option>
+                    <option>General Applicant</option> */}
                     <option>Management Quota Applicant</option>
                   </select>
                 </div>

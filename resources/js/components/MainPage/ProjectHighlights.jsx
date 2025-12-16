@@ -5,7 +5,7 @@
       { label: "Plots Starting", value: "Price ₹1.19 Cr*" },
       { label: "Total No. of Plots", value: "30" },
       { label: "Payment Plan", value: "10:40:25:25" },
-      {
+      { 
         label: "HRERA-NO",
         value: "HRERA-PKL-SNP-741-2025 dated on 11-08-2025",
       },
