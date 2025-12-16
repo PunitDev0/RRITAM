@@ -51,7 +51,7 @@ export default function BannerSection({ openRegistrationModal }) {
               </p>
 
               <p className="text-green-300 text-xl font-bold tracking-wide">
-                REGISTRATION Closed
+                REGISTRATION Open Only For Under Management Quota
               </p>
 
               <p className="text-white text-lg font-semibold">
@@ -70,9 +70,9 @@ export default function BannerSection({ openRegistrationModal }) {
                 {/* 🔥 Highlight — button ke niche */}
                 <div
                   className="px-6 py-2 translate-y-20 rounded-full bg-yellow-400 text-black 
-                   font-bold text-5xl tracking-wide shadow-md animate-pulse"
+                   font-bold md:text-3xl sm:text-xl text-lg tracking-wide shadow-md animate-pulse"
                 >
-                  ⚠️ ONLY UNDER MANAGEMENT QUOTA
+                  📝  ONLY UNDER MANAGEMENT QUOTA
                 </div>
               </div>
 
