@@ -53,10 +53,10 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
           ))}
 
           <Button
-            onClick={openRegistrationModal}
+            // onClick={openRegistrationModal}
             className="rounded-full bg-[#4285f4] hover:bg-blue-700 text-white px-6"
           >
-             Registration Open
+             Registration Closed
           </Button>
         </nav>
 
@@ -86,12 +86,12 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
             ))}
             <Button
               onClick={() => {
-                openRegistrationModal();
+                // openRegistrationModal();
                 toggleNav();
               }}
               className="w-full rounded-full bg-[#4285f4] hover:bg-blue-700"
             >
-               Registration Open
+               Registration Closed
             </Button>
           </div>
         </div>
