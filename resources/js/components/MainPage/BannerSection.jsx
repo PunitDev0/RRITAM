@@ -61,10 +61,10 @@ export default function BannerSection({ openRegistrationModal }) {
               {/* 👇 Button + Highlight Wrapper */}
               <div className="flex flex-col items-center gap-4 pt-4">
                 <Button
-                  // onClick={openRegistrationModal}
+                  onClick={openRegistrationModal}
                   className="rounded-2xl bg-[#4285f4] text-white cursor-not-allowed opacity-90"
                 >
-                  Register Closed
+                  Register Open
                 </Button>
 
                 {/* 🔥 Highlight — button ke niche */}
