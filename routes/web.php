@@ -17,6 +17,7 @@ Route::get('/contact', fn() => Inertia::render('Contact'))->name('contact');
 Route::get('/terms', fn() => Inertia::render('Terms'))->name('terms');
 Route::get('/privacy', fn() => Inertia::render('Privacy'))->name('privacy');
 Route::get('/refund-policy', fn() => Inertia::render('RefundPolicy'))->name('refund-policy');
+Route::get('/disclaimer', fn() => Inertia::render('Disclaimer'))->name('disclaimer');
 
 // ----------------------
 // Admin login routes

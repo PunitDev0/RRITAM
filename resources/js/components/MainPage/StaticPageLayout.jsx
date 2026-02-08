@@ -31,7 +31,6 @@ export default function StaticPageLayout({ children }) {
         openRegistrationModal={openRegistrationModal}
       />
       <main className="flex-1">{children}</main>
-      <Footer />
     </div>
   );
 }

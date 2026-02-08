@@ -24,22 +24,40 @@ const Footer = () => {
             </div>
 
             {/* Disclaimer */}
-            <p id="disclaimer" className="text-justify text-white leading-relaxed text-sm md:text-base">
-              This website is an informational platform for residential plotted projects offered under the Deen Dayal Jan Awas Yojana (DDJAY) policy of the Haryana Government. Marketing and customer facilitation services are provided by a privately operated real estate promotion entity. This is not an official government website.
+            <p id="disclaimer" className="text-justify text-white leading-relaxed text-xs md:text-sm">
+              This website deendayaljanawasyojanareg.org is created for information and registration facilitation purposes only for the project RRITAM Peace Valley, a residential plotted development registered under HRERA-PKL-SNP-741-2025 and developed under the Deen Dayal Jan Awas Yojna (Affordable Plotted Housing Policy, 2016) of the Government of Haryana. The content, images, layouts, specifications, distances, connectivity details, pricing, payment plans, amenities, timelines, and other project-related information displayed on this website are indicative in nature and are subject to change as per approvals, statutory requirements, and directives of competent authorities including DTCP Haryana and HRERA.
+            </p>
+
+            {/* Refund Trust Line */}
+            <p className="text-white text-[11px] md:text-xs font-medium opacity-90 border-t border-white/20 pt-2">
+              Refund applicable within 15 days from the date of allotment, subject to terms & conditions.
+            </p>
+
+            {/* Ads-Safe Agreement Line */}
+            <p className="text-white text-[10px] md:text-[11px] opacity-70">
+              By proceeding, you agree to the Terms & Conditions, Refund Policy, and Disclaimer.
+            </p>
+
+            {/* Privacy & Cookie Trust Lines */}
+            <p className="text-white text-[10px] md:text-[11px] opacity-60">
+              Your privacy is important to us. We collect information only to serve you better. <br />
+              By continuing to use this website, you agree to our use of cookies.
             </p>
 
             {/* Copyright + Links */}
             <footer className="bg-gray-900 py-6 text-center">
-  <p className="text-white text-sm md:text-base">
-    &copy; {new Date().getFullYear()}{" "}
-    <b>Dee Divine Propinfra Pvt. Ltd.</b> All Rights Reserved.{" "}
-    
-    <a href="/about" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">About</a> |{" "}
-    <a href="/contact" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Contact</a> |{" "}
-    <a href="/privacy" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Privacy Policy</a> |{" "}
-    <a href="/terms" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Terms & Conditions</a>
-  </p>
-</footer>
+              <p className="text-white text-sm md:text-base">
+                &copy; {new Date().getFullYear()}{" "}
+                <b>Dee Divine Propinfra Pvt. Ltd.</b> All Rights Reserved.{" "}
+
+                <a href="/about" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">About</a> |{" "}
+                <a href="/contact" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Contact</a> |{" "}
+                <a href="/privacy" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Privacy Policy</a> |{" "}
+                <a href="/terms" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Terms & Conditions</a> |{" "}
+                <a href="/refund-policy" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Refund Policy</a> |{" "}
+                <a href="/disclaimer" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Disclaimer</a>
+              </p>
+            </footer>
 
           </div>
         </div>

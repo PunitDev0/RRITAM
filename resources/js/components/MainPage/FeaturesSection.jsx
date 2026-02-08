@@ -31,7 +31,7 @@ function CountdownTimer() {
   }, [targetDate]);
 
   if (timeLeft.finished)
-    return <p className="text-blue-600 text-xs">Registration Closed!</p>;
+    return <p className="text-blue-600 text-xs">Registration Open!</p>;
 
   return (
     <div className="text-[18px] sm:text-[22px] font-semibold text-red-600 mt-2">
@@ -50,22 +50,23 @@ const notices = [
     borderColor: "border-blue-500",
   },
   {
-    title: "Registration Starts 1 March",
+    title: "Registration Starts",
     description: "Allotment Last Date 5 March 2026",
     extra: "Stay tuned for the next registration cycle.",
     borderColor: "border-gray-500",
   },
   {
     title: "Attractive Payment Plan",
-    description: "HRERA-PKL-SNP-741-2025",
-    extra: "EMI options available up to 12 months.",
+    description: "10% - 40% - 25% - 25%",
+    extra: "HRERA-PKL-SNP-741-2025",
     borderColor: "border-blue-500",
   },
   {
     title: "Loan Facility Available",
     description: "Registration Open",
-    extra: "Loans provided in collaboration with partner banks.",
+    extra: "Up to 80% Loan availability",
     borderColor: "border-blue-500",
+    logos: ["/images/union-bank.png", "/images/icicibank.png"],
   },
 ];
 
@@ -90,11 +91,21 @@ export default function FeaturesSection() {
             </p>
           )}
 
-          {notice.extra && (
-            <p className="text-[9px] sm:text-[10px] text-gray-500 mt-1 sm:mt-2 flex-1 leading-tight">
-              {notice.extra}
-            </p>
-          )}
+          <div className="flex justify-between items-end mt-auto">
+            {notice.extra && (
+              <p className="text-[9px] sm:text-[10px] text-gray-500 flex-1 leading-tight">
+                {notice.extra}
+              </p>
+            )}
+
+            {notice.logos && (
+              <div className="flex gap-3 items-center">
+                {notice.logos.map((logo, idx) => (
+                  <img key={idx} src={logo} alt="bank logo" className="h-6 sm:h-8 object-contain" />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       ))}
     </div>

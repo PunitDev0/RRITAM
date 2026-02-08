@@ -65,6 +65,9 @@ export default function DDJAYResidentialSection() {
           >
             Get in Touch
           </a>
+          <p className="text-white text-[10px] opacity-90 mt-3">
+            * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-100">Refer Disclaimer</a>
+          </p>
         </div>
       </div>
     </div>

@@ -204,21 +204,14 @@ const RegistrationModal = ({
                     required
                   >
                     <option value="">Select Quota</option>
-
-                    {/* ❌ CLOSED OPTIONS */}
-                    <option value="Female Applicant" disabled>
-                      Female Applicant (Closed)
+                    <option value="Female Applicant">
+                      Female Applicant
                     </option>
-                    <option value="Govt Employee Applicant" disabled>
-                      Govt Employee Applicant (Closed)
+                    <option value="Govt Employee Applicant" >
+                      Govt Employee Applicant
                     </option>
-                    <option value="General Applicant" disabled>
-                      General Applicant (Closed)
-                    </option>
-
-                    {/* ✅ ONLY OPEN OPTION */}
-                    <option value="Management Quota Applicant">
-                      Management Quota Applicant
+                    <option value="General Applicant" >
+                      General Applicant
                     </option>
                   </select>
 
@@ -267,14 +260,17 @@ const RegistrationModal = ({
                     onChange={handleRegFormChange}
                     required
                   />
-                  <label className="form-check-label">
-                    I agree to the <a href="/terms" target="_blank">Terms & Conditions</a>
+                  <label className="form-check-label text-[12px] leading-tight text-gray-600">
+                    I agree to the <a href="/terms" target="_blank" className="font-semibold text-primary">Terms & Conditions</a>, <a href="/privacy" target="_blank" className="font-semibold text-primary">Privacy Policy</a>, <a href="/refund-policy" target="_blank" className="font-semibold text-primary">Refund Policy</a>, and <a href="/disclaimer" target="_blank" className="font-semibold text-primary">Disclaimer</a>, and I authorize the company to contact me via call, SMS, WhatsApp, or email regarding this project.
                   </label>
                 </div>
 
                 <button type="submit" className="btn btn-primary mt-3">
                   Submit & Pay
                 </button>
+                <p className="text-gray-500 text-[10px] mt-2 text-center">
+                  * Terms & Conditions Apply | <a href="/disclaimer" target="_blank" className="underline hover:text-blue-600">Refer Disclaimer</a>
+                </p>
 
               </div>
             </form>

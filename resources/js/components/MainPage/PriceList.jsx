@@ -147,6 +147,9 @@ export default function PriceList() {
           </TableBody>
         </Table>
       </div>
+      <p className="max-w-7xl mx-auto px-4 text-gray-500 text-[10px] mt-4 text-right sm:text-center">
+        * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-600">Refer Disclaimer</a>
+      </p>
     </div>
   );
 }

@@ -61,19 +61,16 @@ export default function BannerSection({ openRegistrationModal }) {
               {/* 👇 Button + Highlight Wrapper */}
               <div className="flex flex-col items-center gap-4 pt-4">
                 <Button
-                  // onClick={openRegistrationModal}
-                  className="rounded-2xl bg-[#4285f4] text-white cursor-not-allowed opacity-90"
+                  onClick={openRegistrationModal}
+                  className="rounded-2xl bg-[#4285f4] text-white cursor-pointer"
                 >
-                  Registration Starts 1 March 2026
+                  Registration Open
                 </Button>
+                <p className="text-white text-[10px] opacity-80 -mt-2">
+                  * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
+                </p>
 
-                {/* 🔥 Highlight — button ke niche */}
-                <div
-                  className="px-6 py-2 translate-y-20 rounded-full bg-yellow-400 text-black 
-                   font-bold md:text-3xl sm:text-xl text-lg tracking-wide shadow-md animate-pulse"
-                >
-                  📝  ONLY UNDER MANAGEMENT QUOTA
-                </div>
+
               </div>
 
             </div>

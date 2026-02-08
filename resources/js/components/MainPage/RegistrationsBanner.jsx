@@ -1,6 +1,6 @@
 import React from "react";
 
-const RegistrationBanner = ({openRegistrationModal}) => {
+const RegistrationBanner = ({ openRegistrationModal }) => {
   return (
     <section className="relative bg-[#4285f4] text-white py-10 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden">
       {/* Background Image */}
@@ -18,11 +18,14 @@ const RegistrationBanner = ({openRegistrationModal}) => {
         <h2 className="text-xl md:text-2xl font-semibold leading-snug max-w-xl">
           Deen Dayal Jan Awas Yojana Affordable Residential Plots
         </h2>
-        <button o
-        // onClick={() => openRegistrationModal()}
-         className="mt-4 bg-[#79a8f2] border border-black text-white font-semibold px-5 py-2 rounded-md transition-all">
-           Registration Closed
+        <button
+          onClick={() => openRegistrationModal()}
+          className="mt-4 bg-[#79a8f2] border border-black text-white font-semibold px-5 py-2 rounded-md transition-all">
+          Registration Open
         </button>
+        <p className="text-white text-[10px] opacity-90 mt-2 block">
+          * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
+        </p>
       </div>
 
       {/* Right Image */}
