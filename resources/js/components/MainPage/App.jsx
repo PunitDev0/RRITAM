@@ -262,7 +262,7 @@ const App = ({ flash }) => {
         <BannerSection openRegistrationModal={openRegistrationModal} />
         <FeaturesSection />
         <DDJAYResidentialSection />
-        <NewsAdd />
+        {/* <NewsAdd /> */}
         <ProjectIntro />
         <ApprovedBanks />
         <RegistrationBanner openRegistrationModal={openRegistrationModal} />
