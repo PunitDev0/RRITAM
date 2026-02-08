@@ -21,7 +21,7 @@ const RegistrationBanner = ({ openRegistrationModal }) => {
         <button
           onClick={() => openRegistrationModal()}
           className="mt-4 bg-[#79a8f2] border border-black text-white font-semibold px-5 py-2 rounded-md transition-all">
-          Registration Open
+          Registration Starts Soon
         </button>
         <p className="text-white text-[10px] opacity-90 mt-2 block">
           * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
