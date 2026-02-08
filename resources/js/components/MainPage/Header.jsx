@@ -45,9 +45,9 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
                   handleNavLinkClick(e, item.link);
                 }
               }}
-              className="flex items-center gap-1 font-medium text-gray-800 hover:text-green-600 transition"
+              className="flex items-center gap-1 font-medium text-gray-800 hover:text-blue-600 transition"
             >
-              <Check className="h-4 w-4 text-green-600" />
+              <Check className="h-4 w-4 text-blue-600" />
               {item.label}
             </a>
           ))}
@@ -78,9 +78,9 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
                   handleNavLinkClick(e, item.link);
                   toggleNav();
                 }}
-                className="flex items-center gap-2 text-gray-700 hover:text-green-600"
+                className="flex items-center gap-2 text-gray-700 hover:text-blue-600"
               >
-                <Check className="h-5 w-5 text-green-600" />
+                <Check className="h-5 w-5 text-blue-600" />
                 {item.label}
               </a>
             ))}

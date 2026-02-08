@@ -19,7 +19,7 @@ export default function Gallery() {
 
   return (
     <section className="py-10 bg-white">
-      <h2 className="text-center text-2xl font-semibold text-green-800 mb-6">
+      <h2 className="text-center text-2xl font-semibold text-blue-800 mb-6">
         Gallery
       </h2>
 

@@ -12,6 +12,8 @@ Route::get('/', fn() => Inertia::render('welcome'))->name('home');
 
 
 
+Route::get('/about', fn() => Inertia::render('About'))->name('about');
+Route::get('/contact', fn() => Inertia::render('Contact'))->name('contact');
 Route::get('/terms', fn() => Inertia::render('Terms'))->name('terms');
 Route::get('/privacy', fn() => Inertia::render('Privacy'))->name('privacy');
 Route::get('/refund-policy', fn() => Inertia::render('RefundPolicy'))->name('refund-policy');

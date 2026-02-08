@@ -197,30 +197,30 @@ const RegistrationModal = ({
                 <div className="col-md-6">
                   <label className="form-label">Quota</label>
                   <select
-  name="quota"
-  className={`form-control ${regFormErrors.quota ? "is-invalid" : ""}`}
-  value={regForm.quota}
-  onChange={handleRegFormChange}
-  required
->
-  <option value="">Select Quota</option>
+                    name="quota"
+                    className={`form-control ${regFormErrors.quota ? "is-invalid" : ""}`}
+                    value={regForm.quota}
+                    onChange={handleRegFormChange}
+                    required
+                  >
+                    <option value="">Select Quota</option>
 
-  {/* ❌ CLOSED OPTIONS */}
-  <option value="Female Applicant" disabled>
-    Female Applicant (Closed)
-  </option>
-  <option value="Govt Employee Applicant" disabled>
-    Govt Employee Applicant (Closed)
-  </option>
-  <option value="General Applicant" disabled>
-    General Applicant (Closed)
-  </option>
+                    {/* ❌ CLOSED OPTIONS */}
+                    <option value="Female Applicant" disabled>
+                      Female Applicant (Closed)
+                    </option>
+                    <option value="Govt Employee Applicant" disabled>
+                      Govt Employee Applicant (Closed)
+                    </option>
+                    <option value="General Applicant" disabled>
+                      General Applicant (Closed)
+                    </option>
 
-  {/* ✅ ONLY OPEN OPTION */}
-  <option value="Management Quota Applicant">
-    Management Quota Applicant
-  </option>
-</select>
+                    {/* ✅ ONLY OPEN OPTION */}
+                    <option value="Management Quota Applicant">
+                      Management Quota Applicant
+                    </option>
+                  </select>
 
                 </div>
 
@@ -235,11 +235,11 @@ const RegistrationModal = ({
                     required
                   >
                     <option value="">Select Size</option>
-                    <option value="145.697 @ 80000">145.697 @ 80000</option>
-                    <option value="158.159 @ 80000">158.159 @ 80000</option>
-                    <option value="162.077 @ 80000">162.077 @ 80000</option>
-                    <option value="167.233 @ 80000">167.233 @ 80000</option>
-                    <option value="179.395 @ 80000">179.395 @ 80000</option>
+                    <option value="145.697 @ 85000">145.697 @ 85000</option>
+                    <option value="158.159 @ 85000">158.159 @ 85000</option>
+                    <option value="162.077 @ 85000">162.077 @ 85000</option>
+                    <option value="167.233 @ 85000">167.233 @ 85000</option>
+                    <option value="179.395 @ 85000">179.395 @ 85000</option>
                   </select>
                 </div>
 

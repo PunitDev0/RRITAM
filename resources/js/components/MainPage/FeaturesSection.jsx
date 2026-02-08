@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 
 // ==================== COUNTDOWN TIMER (IST FIXED) ====================
 function CountdownTimer() {
-  // Countdown ends EXACTLY: 14 Dec 2025, 23:59:59 IST
-  // Convert IST → UTC: Subtract 5 hours 30 minutes
+  // Countdown ends EXACTLY: 5 March 2026, 23:59:59 IST
   // 23:59:59 IST == 18:29:59 UTC
-  const targetDate = new Date("2025-12-24T18:29:59Z").getTime();
+  const targetDate = new Date("2026-03-05T18:29:59Z").getTime();
 
   const [timeLeft, setTimeLeft] = useState({});
 
@@ -29,10 +28,10 @@ function CountdownTimer() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [targetDate]);
 
   if (timeLeft.finished)
-    return <p className="text-green-600 text-xs">Registration Closed!</p>;
+    return <p className="text-blue-600 text-xs">Registration Closed!</p>;
 
   return (
     <div className="text-[18px] sm:text-[22px] font-semibold text-red-600 mt-2">
@@ -45,14 +44,14 @@ function CountdownTimer() {
 // ==================== NOTICE DATA ====================
 const notices = [
   {
-    title: "Registration Last Date - 24 December 2025",
+    title: "Registration Last Date - 5 March 2026",
     countdown: true,
     extra: "Please check our website for future updates.",
-    borderColor: "border-green-500",
+    borderColor: "border-blue-500",
   },
   {
-    title: "Registration Opened",
-    description: "Allotment Last Date 28 December 2025",
+    title: "Registration Starts 1 March",
+    description: "Allotment Last Date 5 March 2026",
     extra: "Stay tuned for the next registration cycle.",
     borderColor: "border-gray-500",
   },
@@ -66,7 +65,7 @@ const notices = [
     title: "Loan Facility Available",
     description: "Registration Open",
     extra: "Loans provided in collaboration with partner banks.",
-    borderColor: "border-green-500",
+    borderColor: "border-blue-500",
   },
 ];
 

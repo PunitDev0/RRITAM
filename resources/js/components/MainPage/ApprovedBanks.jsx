@@ -16,7 +16,7 @@ const ApprovedBanks = () => {
   return (
     <section className="bg-white py-12 px-4 md:px-10 lg:px-20 text-center">
       {/* Title */}
-      <h2 className="text-xl md:text-2xl font-semibold text-green-600 mb-8">
+      <h2 className="text-xl md:text-2xl font-semibold text-blue-600 mb-8">
         The Project has been Approved By
       </h2>
 

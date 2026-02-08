@@ -1,5 +1,8 @@
 import React from 'react';
 
+const PHONE = '+919211494111';
+const WHATSAPP_URL = `https://wa.me/91${PHONE.replace(/\D/g, '')}`;
+
 const Footer = () => {
   return (
     <>
@@ -7,32 +10,40 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4">
 
+            {/* Call / WhatsApp section – anchor for Contact link */}
+            <div id="contact" className="pb-4 border-b border-white/30">
+              <p className="text-white font-semibold mb-2">Get in touch</p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a href={`tel:${PHONE}`} className="text-white hover:underline font-bold">
+                  Call: {PHONE}
+                </a>
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-white hover:underline font-bold">
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+
             {/* Disclaimer */}
-            <p className="text-justify text-white leading-relaxed text-sm md:text-base">
-              <b>Disclaimer - </b>
-              The content provided on this website is for informational purposes only
-              and does not constitute an offer or invitation to offer. All images,
-              layouts, and visuals are artistic impressions and not actual
-              representations.
-              <b> Rritam Peace Valley, located in Bahalgarh, Sector 80, Sonipat, </b>
-              is a DDJAY-approved project. RRITAM REALITY LLP does not guarantee the
-              accuracy, completeness, or current relevance of the displayed information.
-              All details, specifications, and project-related information are subject
-              to change without prior notice as per applicable laws and authorities.
+            <p id="disclaimer" className="text-justify text-white leading-relaxed text-sm md:text-base">
+              This website is an informational platform for residential plotted projects offered under the Deen Dayal Jan Awas Yojana (DDJAY) policy of the Haryana Government. Marketing and customer facilitation services are provided by a privately operated real estate promotion entity. This is not an official government website.
             </p>
 
             {/* Copyright + Links */}
-            <p className="text-white text-sm md:text-base">
-              &copy; {new Date().getFullYear()} <b>RRITAM REALITY LLP</b>. All Rights Reserved.{" "}
-              <a href="/privacy" target="_blank" className="text-black  hover:underline">Privacy Policy</a> |{" "}
-              <a href="/terms" target="_blank" className="text-black hover:underline">Terms & Conditions</a> |{" "}
-              <a href="/refund-policy" target="_blank" className="text-black hover:underline">Refund Policy</a>
-            </p>
+            <footer className="bg-gray-900 py-6 text-center">
+  <p className="text-white text-sm md:text-base">
+    &copy; {new Date().getFullYear()}{" "}
+    <b>Dee Divine Propinfra Pvt. Ltd.</b> All Rights Reserved.{" "}
+    
+    <a href="/about" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">About</a> |{" "}
+    <a href="/contact" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Contact</a> |{" "}
+    <a href="/privacy" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Privacy Policy</a> |{" "}
+    <a href="/terms" className="text-white hover:text-gray-300 underline-offset-4 hover:underline">Terms & Conditions</a>
+  </p>
+</footer>
 
           </div>
         </div>
       </footer>
-
     </>
   );
 };

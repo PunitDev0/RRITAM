@@ -12,6 +12,7 @@ import Header from './Header';
 import BannerSection from './BannerSection';
 import RegistrationModal from './RegistrationModal';
 import FeaturesSection from './FeaturesSection';
+import DDJAYResidentialSection from './DDJAYResidentialSection';
 import RegistrationBanner from './RegistrationsBanner';
 import ProjectIntro from './ProjectIntro';
 import ApprovedBanks from './ApprovedBanks';
@@ -20,6 +21,7 @@ import PriceList from './PriceList';
 import LocationAdvantages from './LocationAdvantages';
 import GalleryComponent from './Gallery';
 import AboutDDJAY from './About-DDJAY';
+import WhyConsiderDDJAY from './WhyConsiderDDJAY';
 import Footer from './Footer';
 import NewsAdd from './news-add'
 const App = ({ flash }) => {
@@ -79,7 +81,7 @@ const App = ({ flash }) => {
 
   // Countdown Timer
   useEffect(() => {
-    const endTime = Date.parse('October 12, 2025 18:00:00 PDT') / 1000;
+    const endTime = Date.parse('March 5, 2026 23:59:59') / 1000;
     const updateTimer = () => {
       const now = Date.now() / 1000;
       const timeLeft = endTime - now;
@@ -259,6 +261,7 @@ const App = ({ flash }) => {
       <div>
         <BannerSection openRegistrationModal={openRegistrationModal} />
         <FeaturesSection />
+        <DDJAYResidentialSection />
         {/* <NewsAdd/> */}
         <ProjectIntro />
         <ApprovedBanks />
@@ -269,6 +272,7 @@ const App = ({ flash }) => {
         <PriceList />
         <LocationAdvantages />
         <AboutDDJAY />
+        <WhyConsiderDDJAY />
         <Footer />
       </div>
 

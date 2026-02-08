@@ -17,18 +17,18 @@ export default function BannerSection({ openRegistrationModal }) {
       <div className="news-tricker">
         <marquee width="100%" direction="left" height="" className="text-[17px] font-semibold">
 
-          ATTENTION REGISTRATION OPEN !!!! Book Your Plot under Affordable
+          ATTENTION REGISTRATION START 1 MARCH 2026 !!!! Book Your Plot under Affordable
           Housing Policy 2013 for RRITAM PEACE VALLEY *** 33% Quota Reserved for Women
           *** 33% Quota Reserved under Government Category ***
 
           UNIT ALLOTMENT DATE:
           <span className="bg-yellow-400 text-black px-3 py-1 mx-2 rounded-sm blink-date">
-            28 December 2025
+            5 March 2026
           </span>
 
           LAST DATE OF APPLICATION:
           <span className="bg-red-600 text-white px-3 py-1 mx-2 font-bold blink-date rounded-sm">
-            24 December 2025
+            5 March 2026
           </span>
 
           Registration Amount is Fully Refundable for Unsuccessful Applicants Within 14 Working Days
@@ -50,7 +50,7 @@ export default function BannerSection({ openRegistrationModal }) {
                 HRERA-PKL-SNP-741-2025 dated on 11.08.2025
               </p>
 
-              <p className="text-green-300 text-xl font-bold tracking-wide">
+              <p className="text-blue-200 text-xl font-bold tracking-wide">
                 REGISTRATION Open Only For Under Management Quota
               </p>
 
@@ -64,7 +64,7 @@ export default function BannerSection({ openRegistrationModal }) {
                   // onClick={openRegistrationModal}
                   className="rounded-2xl bg-[#4285f4] text-white cursor-not-allowed opacity-90"
                 >
-                  Register Closed
+                  Registration Starts 1 March 2026
                 </Button>
 
                 {/* 🔥 Highlight — button ke niche */}

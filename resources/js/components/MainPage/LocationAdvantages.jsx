@@ -56,7 +56,7 @@ const LocationAdvantages = () => {
               {/* 🔥 DYNAMIC LIST USING ARRAY */}
               {highlights.map((item, index) => (
                 <div className="flex gap-3 mb-3 items-start" key={index}>
-                  <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
+                  <CheckCircle className="text-blue-600 w-5 h-5 mt-1" />
                   <p>
                     <strong>{item.title}:</strong> {item.desc}
                   </p>
