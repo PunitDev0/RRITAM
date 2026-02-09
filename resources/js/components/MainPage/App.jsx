@@ -47,11 +47,11 @@ const App = ({ flash }) => {
 
   // Open Registration Modal
   const openRegistrationModal = () => {
-    // const modalElement = document.getElementById('registrationModal');
-    // if (modalElement) {
-    //   const modal = new bootstrap.Modal(modalElement);
-    //   modal.show();
-    // }
+    const modalElement = document.getElementById('registrationModal');
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
   };
 
   // Auto-open enquiry popup (only once per session)

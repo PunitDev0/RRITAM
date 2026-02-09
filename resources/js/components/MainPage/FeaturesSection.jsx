@@ -31,7 +31,7 @@ function CountdownTimer() {
   }, [targetDate]);
 
   if (timeLeft.finished)
-    return <p className="text-blue-600 text-xs">Registration Starts Soon!</p>;
+    return <p className="text-blue-600 text-xs">Registration Open!</p>;
 
   return (
     <div className="text-[18px] sm:text-[22px] font-semibold text-red-600 mt-2">
@@ -63,7 +63,7 @@ const notices = [
   },
   {
     title: "Loan Facility Available",
-    description: "Registration Starts Soon",
+    description: "Registration Open",
     extra: "Up to 80% Loan availability",
     borderColor: "border-blue-500",
     logos: ["/images/union-bank.png", "/images/icicibank.png"],

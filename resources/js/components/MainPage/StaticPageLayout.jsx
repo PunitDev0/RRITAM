@@ -19,7 +19,7 @@ export default function StaticPageLayout({ children }) {
   };
 
   const openRegistrationModal = () => {
-    // window.location.href = "/";
+    window.location.href = "/";
   };
 
   return (

@@ -100,7 +100,7 @@ const MainContent = ({
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
               <h2 className="h4 h2-md mb-3">Deen Dayal Jan Awas Yojana Affordable Residential Plots</h2>
               <a href="#" className="btn btn-danger px-4 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#registrationModal">
-                Registration Starts Soon
+                Registration Open
               </a>
             </div>
             <div className="col-md-6 text-center">

@@ -51,7 +51,7 @@ export default function BannerSection({ openRegistrationModal }) {
               </p>
 
               <p className="text-blue-200 text-xl font-bold tracking-wide">
-                REGISTRATION Starts Soon Only For Under Management Quota
+                REGISTRATION Open Only For Under Management Quota
               </p>
 
               <p className="text-white text-lg font-semibold">
@@ -64,7 +64,7 @@ export default function BannerSection({ openRegistrationModal }) {
                   onClick={openRegistrationModal}
                   className="rounded-2xl bg-[#4285f4] text-white cursor-pointer"
                 >
-                  Registration Starts Soon
+                  Registration Open
                 </Button>
                 <p className="text-white text-[10px] opacity-80 -mt-2">
                   * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
