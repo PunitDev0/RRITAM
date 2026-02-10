@@ -17,7 +17,7 @@ export default function BannerSection({ openRegistrationModal }) {
       <div className="news-tricker">
         <marquee width="100%" direction="left" height="" className="text-[17px] font-semibold">
 
-          ATTENTION REGISTRATION STARTs !!!! Book Your Plot under Affordable
+          ATTENTION REGISTRATION START !!!! Book Your Plot under Affordable
           Housing Policy 2016 for RRITAM PEACE VALLEY *** 33% Quota Reserved for Women
           *** 33% Quota Reserved under Government Category ***
 
