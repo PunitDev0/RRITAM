@@ -42,7 +42,7 @@ const LocationAdvantages = () => {
   ];
 
   return (
-    <div className="amenities jst-pb" id="amenities">
+    <div className="amenities jst-pb" id="location">
       <div className="container">
         <h2 className="cons-heading pb-5 text-center font-sans">
           Location Advantages

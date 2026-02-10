@@ -18,7 +18,7 @@ export default function Gallery() {
   const [index, setIndex] = useState(-1);
 
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 bg-white" id="gallery">
       <h2 className="text-center text-2xl font-semibold text-blue-800 mb-6">
         Gallery
       </h2>

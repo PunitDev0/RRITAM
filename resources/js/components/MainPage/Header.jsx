@@ -4,11 +4,12 @@ import { Check, Menu, X } from "lucide-react";
 
 const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClick }) => {
   const navItems = [
-    // { label: "Site Plan", link: "#siteplan" },
+    { label: "About", link: "#about" },
+    { label: "Site Plan", link: "#siteplan" },
+    { label: "Price List", link: "#pricelist" },
+    { label: "Gallery", link: "#gallery" },
+    { label: "Location", link: "#location" },
     { label: "Brochure", link: "/images/brocher.pdf" },
-    { label: "HRERA License", link: "/images/rera.pdf" },
-    { label: "Grasso License", link: "/images/RritamrealityGrassoLicense.pdf" },
-    { label: "Price List", link: "/images/pricelist.pdf" },
   ];
 
   return (
@@ -75,8 +76,11 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
                 key={i}
                 href={item.link}
                 onClick={(e) => {
-                  handleNavLinkClick(e, item.link);
-                  toggleNav();
+                  if (item.link.startsWith("#")) {
+                    handleNavLinkClick(e, item.link);
+                  } else {
+                    toggleNav();
+                  }
                 }}
                 className="flex items-center gap-2 text-gray-700 hover:text-blue-600"
               >

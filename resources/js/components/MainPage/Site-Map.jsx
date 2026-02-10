@@ -2,7 +2,7 @@ import React from 'react'
 
 function SiteMap() {
     return (
-        <div class="mt-5">
+        <div class="mt-5" id="siteplan">
             <h2 class="cons-heading pb-2 text-center font-sans">
                 RRITAM PEACE VALLEY BAHALGARH
             </h2>

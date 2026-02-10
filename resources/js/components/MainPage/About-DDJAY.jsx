@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutDDJAY() {
   return (
-    <div className="deendayal-yojna mt-16 px-4 md:px-6 lg:px-12">
+    <div className="deendayal-yojna mt-16 px-4 md:px-6 lg:px-12" id="about">
       <div className="container mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-center font-sans pb-4 text-gray-800">

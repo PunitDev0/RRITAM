@@ -118,9 +118,14 @@ const App = ({ flash }) => {
 
   const toggleNav = () => setIsNavOpen(prev => !prev);
   const handleNavLinkClick = (e, targetId) => {
-    e.preventDefault();
-    setIsNavOpen(false);
-    document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' });
+    if (targetId.startsWith("#")) {
+      e.preventDefault();
+      setIsNavOpen(false);
+      const element = document.querySelector(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   // Registration Form (unchanged)
