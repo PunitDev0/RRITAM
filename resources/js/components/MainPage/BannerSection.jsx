@@ -21,12 +21,12 @@ export default function BannerSection({ openRegistrationModal }) {
           Housing Policy 2013 for RRITAM PEACE VALLEY *** 33% Quota Reserved for Women
           *** 33% Quota Reserved under Government Category ***
 
-          UNIT ALLOTMENT DATE:
+          LAST DATE OF APPLICATION:
           <span className="bg-yellow-400 text-black px-3 py-1 mx-2 rounded-sm blink-date">
-            5 March 2026
+            1 March 2026
           </span>
 
-          LAST DATE OF APPLICATION:
+          LAST DATE OF ALLOTMENT:
           <span className="bg-red-600 text-white px-3 py-1 mx-2 font-bold blink-date rounded-sm">
             5 March 2026
           </span>
