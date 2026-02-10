@@ -67,7 +67,7 @@ export default function BannerSection({ openRegistrationModal }) {
                   Registration Open
                 </Button>
                 <p className="text-white text-[10px] opacity-80 -mt-2">
-                  * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
+                  <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
                 </p>
 
 

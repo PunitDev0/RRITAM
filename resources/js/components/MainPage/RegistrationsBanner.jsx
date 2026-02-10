@@ -24,7 +24,7 @@ const RegistrationBanner = ({ openRegistrationModal }) => {
           Registration Open
         </button>
         <p className="text-white text-[10px] opacity-90 mt-2 block">
-          * Terms & Conditions Apply | <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
+          <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
         </p>
       </div>
 

@@ -44,7 +44,7 @@ function CountdownTimer() {
 // ==================== NOTICE DATA ====================
 const notices = [
   {
-    title: "Registration Last Date - 5 March 2026",
+    title: "Registration Last Date - 1 March 2026",
     countdown: true,
     extra: "Please check our website for future updates.",
     borderColor: "border-blue-500",

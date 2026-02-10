@@ -373,7 +373,7 @@ const MainContent = ({
                 <p>
                   &copy; Copyright 2025. All Rights Reserved{' '}
                   <a href="privacy" target="_blank">Privacy Policy</a> |{' '}
-                  <a href="terms" target="_blank">Terms & Conditions</a> |{' '}
+                  Terms & Conditions |{' '}
                   <a href="refund-policy" target="_blank">Refund Policy</a>
                 </p>
               </div>

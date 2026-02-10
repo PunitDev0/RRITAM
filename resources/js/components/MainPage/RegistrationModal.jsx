@@ -261,7 +261,7 @@ const RegistrationModal = ({
                     required
                   />
                   <label className="form-check-label text-[12px] leading-tight text-gray-600">
-                    I agree to the <a href="/terms" target="_blank" className="font-semibold text-primary">Terms & Conditions</a>, <a href="/privacy" target="_blank" className="font-semibold text-primary">Privacy Policy</a>, <a href="/refund-policy" target="_blank" className="font-semibold text-primary">Refund Policy</a>, and <a href="/disclaimer" target="_blank" className="font-semibold text-primary">Disclaimer</a>, and I authorize the company to contact me via call, SMS, WhatsApp, or email regarding this project.
+                    I agree to the Terms & Conditions, <a href="/privacy" target="_blank" className="font-semibold text-primary">Privacy Policy</a>, <a href="/refund-policy" target="_blank" className="font-semibold text-primary">Refund Policy</a>, and <a href="/disclaimer" target="_blank" className="font-semibold text-primary">Disclaimer</a>, and I authorize the company to contact me via call, SMS, WhatsApp, or email regarding this project.
                   </label>
                 </div>
 
@@ -269,7 +269,7 @@ const RegistrationModal = ({
                   Submit & Pay
                 </button>
                 <p className="text-gray-500 text-[10px] mt-2 text-center">
-                  * Terms & Conditions Apply | <a href="/disclaimer" target="_blank" className="underline hover:text-blue-600">Refer Disclaimer</a>
+                  <a href="/disclaimer" target="_blank" className="underline hover:text-blue-600">Refer Disclaimer</a>
                 </p>
 
               </div>

@@ -353,7 +353,7 @@ const App = ({ flash }) => {
               <div className="mb-3">
                 <p className="text-[11px] text-gray-500 leading-tight">
                   <input type="checkbox" required className="me-2" />
-                  I agree to the <a href="/terms" target="_blank" className="text-primary font-medium">Terms</a>, <a href="/privacy" target="_blank" className="text-primary font-medium">Privacy Policy</a> & <a href="/refund-policy" target="_blank" className="text-primary font-medium">Refund Policy</a> and allow contact for project updates.
+                  I agree to the Terms, <a href="/privacy" target="_blank" className="text-primary font-medium">Privacy Policy</a> & <a href="/refund-policy" target="_blank" className="text-primary font-medium">Refund Policy</a> and allow contact for project updates.
                 </p>
               </div>
 
@@ -366,7 +366,7 @@ const App = ({ flash }) => {
                 {enquirySubmitting ? "Submitting..." : "Submit"}
               </button>
               <p className="text-gray-500 text-[10px] mt-2 text-center">
-                * Terms & Conditions Apply | <a href="/disclaimer" target="_blank" className="underline hover:text-blue-600">Refer Disclaimer</a>
+                <a href="/disclaimer" target="_blank" className="underline hover:text-blue-600">Refer Disclaimer</a>
               </p>
             </form>
 
