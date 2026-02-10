@@ -7,7 +7,7 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
     { label: "Brochure", link: "/images/brocher.pdf" },
     { label: "HRERA License", link: "/images/rera.pdf" },
     { label: "Grasso License", link: "/images/RritamrealityGrassoLicense.pdf" },
-    { label: "Price List", link: "#pricelist" },
+    { label: "Price List", link: "/images/pricelist.pdf" },
   ];
 
   return (
