@@ -273,7 +273,7 @@ const App = ({ flash }) => {
         <LocationAdvantages />
         <AboutDDJAY />
         <WhyConsiderDDJAY />
-        <Footer />
+        <Footer openEnquiryPopup={() => setShowEnquiryPopup(true)} />
       </div>
 
       {/* Registration Modal */}
@@ -374,7 +374,19 @@ const App = ({ flash }) => {
         </div>
       )}
 
-      {/* Floating Enquiry Button */}
+      {/* Floating WhatsApp Button (Bottom Left) */}
+      <a
+        href="https://wa.me/919211494111"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn rounded-circle shadow-lg position-fixed d-flex align-items-center justify-content-center"
+        style={{ bottom: '20px', left: '20px', zIndex: 998, width: '60px', height: '60px', fontSize: '28px', backgroundColor: '#25D366' }}
+        title="Chat on WhatsApp"
+      >
+        <i className="fab fa-whatsapp text-white"></i>
+      </a>
+
+      {/* Floating Enquiry Button (Bottom Right) */}
       <button
         onClick={() => setShowEnquiryPopup(true)}
         className="btn btn-primary rounded-circle shadow-lg position-fixed d-flex align-items-center justify-content-center"

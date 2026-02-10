@@ -49,10 +49,10 @@ export default function BannerSection({ openRegistrationModal }) {
               <p className="text-lg text-white font-medium">
                 HRERA-PKL-SNP-741-2025 dated on 11.08.2025
               </p>
-
+{/* 
               <p className="text-blue-200 text-xl font-bold tracking-wide">
                 REGISTRATION Open Only For Under Management Quota
-              </p>
+              </p> */}
 
               <p className="text-white text-lg font-semibold">
                 (HARYANA GOVT. RESIDENTIAL PLOTS)
@@ -66,9 +66,9 @@ export default function BannerSection({ openRegistrationModal }) {
                 >
                   Registration Open
                 </Button>
-                <p className="text-white text-[10px] opacity-80 -mt-2">
+                {/* <p className="text-white text-[10px] opacity-80 -mt-2">
                   <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
-                </p>
+                </p> */}
 
 
               </div>

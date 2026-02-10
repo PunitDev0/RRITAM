@@ -3,7 +3,7 @@ import React from 'react';
 const PHONE = '+919211494111';
 const WHATSAPP_URL = `https://wa.me/91${PHONE.replace(/\D/g, '')}`;
 
-const Footer = () => {
+const Footer = ({ openEnquiryPopup }) => {
   return (
     <>
       <footer className="bg-[#4285f4] py-6 mt-10">
@@ -12,7 +12,12 @@ const Footer = () => {
 
             {/* Call / WhatsApp section – anchor for Contact link */}
             <div id="contact" className="pb-4 border-b border-white/30">
-              <p className="text-white font-semibold mb-2">Get in touch</p>
+              <button
+                onClick={openEnquiryPopup}
+                className="text-white font-semibold mb-2 bg-transparent border-none cursor-pointer hover:text-blue-200 transition"
+              >
+                Get in touch
+              </button>
               <div className="flex flex-wrap justify-center gap-4">
                 <a href={`tel:${PHONE}`} className="text-white hover:underline font-bold">
                   Call: {PHONE}
