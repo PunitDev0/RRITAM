@@ -17,8 +17,8 @@ export default function BannerSection({ openRegistrationModal }) {
       <div className="news-tricker">
         <marquee width="100%" direction="left" height="" className="text-[17px] font-semibold">
 
-          ATTENTION REGISTRATION START 1 MARCH 2026 !!!! Book Your Plot under Affordable
-          Housing Policy 2013 for RRITAM PEACE VALLEY *** 33% Quota Reserved for Women
+          ATTENTION REGISTRATION STARTs !!!! Book Your Plot under Affordable
+          Housing Policy 2016 for RRITAM PEACE VALLEY *** 33% Quota Reserved for Women
           *** 33% Quota Reserved under Government Category ***
 
           LAST DATE OF APPLICATION:
@@ -26,12 +26,12 @@ export default function BannerSection({ openRegistrationModal }) {
             1 March 2026
           </span>
 
-          LAST DATE OF ALLOTMENT:
+          DATE OF ALLOTMENT:
           <span className="bg-red-600 text-white px-3 py-1 mx-2 font-bold blink-date rounded-sm">
             5 March 2026
           </span>
 
-          Registration Amount is Fully Refundable for Unsuccessful Applicants Within 14 Working Days
+          Registration Amount is Fully Refundable for Unsuccessful Applicants Within 15 Working Days
         </marquee>
       </div>
       <div className="relative w-full" style={{ maxHeight: "70dvh" }}>
