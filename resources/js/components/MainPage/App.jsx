@@ -261,7 +261,7 @@ const App = ({ flash }) => {
       <div>
         <BannerSection openRegistrationModal={openRegistrationModal} />
         <FeaturesSection />
-        <DDJAYResidentialSection />
+        <DDJAYResidentialSection openEnquiryPopup={() => setShowEnquiryPopup(true)} />
         {/* <NewsAdd /> */}
         <ProjectIntro />
         <ApprovedBanks />

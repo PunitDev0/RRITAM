@@ -24,7 +24,7 @@ const focusCards = [
   },
 ];
 
-export default function DDJAYResidentialSection() {
+export default function DDJAYResidentialSection({ openEnquiryPopup }) {
   return (
     <div className="deendayal-yojna mt-16 px-4 md:px-6 lg:px-12 pb-12">
       <div className="container mx-auto">
@@ -59,12 +59,12 @@ export default function DDJAYResidentialSection() {
           <p className="text-sm md:text-base leading-relaxed mb-4 opacity-95">
             Project information, eligibility guidance, and enquiry support for DDJAY plotted developments. Reach out for site visits and detailed assistance.
           </p>
-          <a
-            href="/contact"
+          <button
+            onClick={openEnquiryPopup}
             className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition"
           >
             Get in Touch
-          </a>
+          </button>
           <p className="text-white text-[10px] opacity-90 mt-3">
             <a href="/disclaimer" className="underline hover:text-blue-100">Refer Disclaimer</a>
           </p>

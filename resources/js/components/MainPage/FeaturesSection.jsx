@@ -50,9 +50,9 @@ const notices = [
     borderColor: "border-blue-500",
   },
   {
-    title: "Registration Starts",
-    description: "Allotment Last Date 5 March 2026",
-    extra: "Stay tuned for the next registration cycle.",
+    title: "DATE OF ALLOTMENT",
+    description: "5 March 2026",
+    extra: "",
     borderColor: "border-gray-500",
   },
   {
