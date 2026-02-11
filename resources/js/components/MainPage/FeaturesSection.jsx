@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 function CountdownTimer() {
   // Countdown ends EXACTLY: 5 March 2026, 23:59:59 IST
   // 23:59:59 IST == 18:29:59 UTC
-  const targetDate = new Date("2026-03-05T18:29:59Z").getTime();
+  const targetDate = new Date("2026-03-01T18:29:59Z").getTime();
 
   const [timeLeft, setTimeLeft] = useState({});
 
