@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 function CountdownTimer() {
   // Countdown ends EXACTLY: 5 March 2026, 23:59:59 IST
   // 23:59:59 IST == 18:29:59 UTC
-  const targetDate = new Date("2026-03-01T18:29:59Z").getTime();
+  const targetDate = new Date("2026-03-08T18:29:59Z").getTime();
 
   const [timeLeft, setTimeLeft] = useState({});
 
@@ -44,14 +44,14 @@ function CountdownTimer() {
 // ==================== NOTICE DATA ====================
 const notices = [
   {
-    title: "Registration Last Date - 1 March 2026",
+    title: "Registration Last Date - 8 March 2026",
     countdown: true,
     extra: "Please check our website for future updates.",
     borderColor: "border-blue-500",
   },
   {
     title: "DATE OF ALLOTMENT",
-    description: "5 March 2026",
+    description: "12 March 2026",
     extra: "",
     borderColor: "border-gray-500",
   },
