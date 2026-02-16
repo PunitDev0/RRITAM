@@ -30,7 +30,7 @@ export default function DDJAYResidentialSection({ openEnquiryPopup }) {
       <div className="container mx-auto">
         {/* Intro */}
         <h2 className="text-2xl md:text-3xl font-semibold text-center font-sans pb-4 text-gray-800">
-          Deen Dayal Jan Awas Yojana – Residential Plotted Development
+           Government of Haryana Housing Policy - DDJAY
         </h2>
         <p className="text-justify leading-relaxed text-gray-700 text-sm md:text-base max-w-4xl mx-auto mb-10">
           Deen Dayal Jan Awas Yojana (DDJAY) is a housing policy of the Haryana Government aimed at promoting affordable, well-connected plotted development. Under this policy, residential plotted colonies are developed with planned layouts, proper infrastructure, and regulatory clarity—offering a transparent framework for homebuyers and long-term value.
@@ -59,12 +59,12 @@ export default function DDJAYResidentialSection({ openEnquiryPopup }) {
           <p className="text-sm md:text-base leading-relaxed mb-4 opacity-95">
             Project information, eligibility guidance, and enquiry support for DDJAY plotted developments. Reach out for site visits and detailed assistance.
           </p>
-          <button
+          {/* <button
             onClick={openEnquiryPopup}
             className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition"
           >
             Get in Touch
-          </button>
+          </button> */}
           <p className="text-white text-[10px] opacity-90 mt-3">
             <a href="/disclaimer" className="underline hover:text-blue-100">Refer Disclaimer</a>
           </p>
