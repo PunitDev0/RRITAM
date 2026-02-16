@@ -43,13 +43,16 @@ export default function BannerSection({ openRegistrationModal }) {
             <div className="max-w-4xl text-center space-y-6">
 
               <h2 className="text-white text-3xl font-bold">
-                RRITAM Peace Valley, Bahalgarh, Sector - 80, Sonipat
+                Deen Dayal Jan Awas Yajna Plots
               </h2>
+              <p className="text-white text-xl font-semibold">
+                RRITAM Peace Valley, Bahalgarh, Sector - 80, Sonipat
+              </p>
 
               <p className="text-lg text-white font-medium">
                 HRERA-PKL-SNP-741-2025 dated on 11.08.2025
               </p>
-{/* 
+              {/* 
               <p className="text-blue-200 text-xl font-bold tracking-wide">
                 REGISTRATION Open Only For Under Management Quota
               </p> */}
