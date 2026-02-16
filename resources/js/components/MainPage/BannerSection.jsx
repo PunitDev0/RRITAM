@@ -42,7 +42,7 @@ export default function BannerSection({ openRegistrationModal }) {
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
             <div className="max-w-4xl text-center space-y-6">
 
-              <h2 className="text-white text-6xl text-green-600 font-bold">
+              <h2 className="text-7xl text-green-600 font-bold">
                 Deen Dayal Jan Awas Yajna Plots
               </h2>
               <p className="text-white text-xl font-semibold">
