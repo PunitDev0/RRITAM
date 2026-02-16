@@ -42,9 +42,9 @@ export default function BannerSection({ openRegistrationModal }) {
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
             <div className="max-w-4xl text-center space-y-6">
 
-              <h2 className="text-5xl md:text-8xl text-green-500 font-extrabold tracking-tight drop-shadow-lg">
+              <p className="text-5xl md:text-5xl underline text-green-500 font-extrabold tracking-tight drop-shadow-lg">
                 Deen Dayal Jan Awas Yajna Plots
-              </h2>
+              </p>
               <p className="text-white text-xl font-semibold">
                 RRITAM Peace Valley, Bahalgarh, Sector - 80, Sonipat
               </p>
