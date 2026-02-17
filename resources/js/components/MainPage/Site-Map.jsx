@@ -19,7 +19,7 @@ function SiteMap() {
                         <h2 class="cons-heading pb-2 text-center font-sans">
                             SITEPLAN
                         </h2>
-                        <img src="/images/site.jpeg" class="w-100" />
+                        <img src="/images/site.jpg" class="w-100" />
                     </div>
                 </div>
             </div>

@@ -37,7 +37,7 @@ export default function Gallery() {
               loading="lazy"
             />
             <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-              Actual Image
+              Artistic Image
             </span>
           </div>
         ))}

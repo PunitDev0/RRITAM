@@ -3,7 +3,7 @@ import React from "react";
 const ProjectHighlights = () => {
   const highlights = [
     { label: "Plots Starting", value: "Price ₹1.26 Cr*" },
-    { label: "Total No. of Plots", value: "30" },
+    { label: "Total No. of Plots", value: "20" },
     { label: "Payment Plan", value: "10:40:25:25" },
     {
       label: "HRERA-NO",
