@@ -26,7 +26,7 @@ const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClic
       {/* Main Header */}
       <div className=" mx-auto flex items-center justify-between py-3 px-4 md:px-6">
         {/* Logos */}
-        <div className="flex items-center gap-3 sm:gap-6">
+        <div className="flex items-center gap-3 sm:gap-4">
           <a href="/"><img src="images/DDJAY_logo.jpg" alt="Logo" className="h-12 w-auto" /></a>
           <a href="/"><img src="images/support.png" alt="Support" className="h-12 w-auto" /></a>
           <a href="/"><img src="images/rera-logo.png" alt="RERA" className="h-12 w-auto" /></a>
