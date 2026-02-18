@@ -43,7 +43,7 @@ export default function BannerSection({ openRegistrationModal }) {
             <div className="max-w-4xl text-center space-y-6">
 
               <p className="text-5xl md:text-5xl underline tracking-widest text-green-500 font-extrabold drop-shadow-lg">
-                Deen Dayal Jan Awas Yajna Plots
+                Deen Dayal Jan Awas Yojana Plots
               </p>
               <p className="text-white text-xl font-semibold">
                 RRITAM Peace Valley, Bahalgarh, Sector - 80, Sonipat
