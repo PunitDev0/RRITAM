@@ -8,17 +8,7 @@
         <meta property="og:url" content="https://deendayaljanawasyojnareg.org">
         <meta property="og:type" content="website">
 
-        <!-- Google tag (gtag.js) -->
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17951291330">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17951291330');
-</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17951291330"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17951291330'); </script>
         <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17779165769">
 </script>
