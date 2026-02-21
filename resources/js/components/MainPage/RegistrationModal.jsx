@@ -205,10 +205,10 @@ const RegistrationModal = ({
                   >
                     <option value="">Select Quota</option>
                     <option value="Female Applicant">
-                      Female Applicant
+                      Female Applicant (₹1500/Sq.Yd. Discount)
                     </option>
                     <option value="Govt Employee Applicant" >
-                      Govt Employee Applicant
+                      Govt Employee Applicant (₹1500/Sq.Yd. Discount)
                     </option>
                     <option value="General Applicant" >
                       General Applicant

@@ -19,6 +19,9 @@ export default function BannerSection({ openRegistrationModal }) {
 
           ATTENTION REGISTRATION START !!!! Book Your Plot under Affordable
           Housing Policy 2016 for RRITAM PEACE VALLEY *** 33% Quota Reserved for Women
+          <span className="bg-green-500 text-white px-2 py-1 mx-2 rounded-sm font-bold shadow-md">
+            (Flat ₹1500/Sq.Yd. Discount)
+          </span>
           *** 33% Quota Reserved under Government Category ***
 
           LAST DATE OF APPLICATION:
@@ -40,16 +43,19 @@ export default function BannerSection({ openRegistrationModal }) {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
 
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            <div className="max-w-4xl text-center space-y-6">
+            <div className="max-w-4xl text-center space-y-4 md:space-y-6 px-4">
+              <div className="bg-yellow-400 text-black px-3 py-2 md:px-4 md:py-2 mt-4 rounded-md font-bold text-sm sm:text-base md:text-xl inline-block animate-[pulse_2s_ease-in-out_infinite] shadow-[0_0_15px_rgba(250,204,21,0.6)]">
+                ⭐ Special Offer: ₹1500/Sq.Yd. Discount on Govenment & Female Quota! ⭐
+              </div>
 
-              <p className="text-5xl md:text-4xl underline tracking-widest text-green-500 font-extrabold drop-shadow-lg">
+              <p className="text-3xl sm:text-4xl md:text-5xl underline tracking-widest text-green-500 font-extrabold drop-shadow-lg">
                 Deen Dayal Jan Awas Yojana Plots
               </p>
-              <p className="text-white text-xl font-semibold">
+              <p className="text-white text-base sm:text-lg md:text-xl font-semibold">
                 RRITAM Peace Valley, Bahalgarh, Sector - 80, Sonipat
               </p>
 
-              <p className="text-lg text-white font-medium">
+              <p className="text-sm sm:text-base md:text-lg text-white font-medium">
                 HRERA-PKL-SNP-741-2025 dated on 11.08.2025
               </p>
               {/* 
@@ -57,9 +63,10 @@ export default function BannerSection({ openRegistrationModal }) {
                 REGISTRATION Open Only For Under Management Quota
               </p> */}
 
-              <p className="text-white text-lg font-semibold">
+              <p className="text-white text-sm sm:text-base md:text-lg font-semibold">
                 (HARYANA GOVT. RESIDENTIAL PLOTS)
               </p>
+
 
               {/* 👇 Button + Highlight Wrapper */}
               <div className="flex flex-col items-center gap-4 pt-4">
