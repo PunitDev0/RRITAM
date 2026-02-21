@@ -4,7 +4,7 @@ import { Check, Menu, X } from "lucide-react";
 
 const Header = ({ openRegistrationModal, isNavOpen, toggleNav, handleNavLinkClick }) => {
   const navItems = [
-    { label: "Brochure", link: "/images/brocher.pdf" },
+    { label: "Brochure", link: "/images/brocher2.pdf" },
     { label: "HRERA License", link: "/images/rera.pdf" },
     { label: "Grasso License", link: "/images/RritamrealityGrassoLicense.pdf" },
     { label: "Price List", link: "/images/pricelist2.pdf" },
