@@ -9,11 +9,11 @@ function generateSrcSet(src, width, height) {
 }
 
 const photos = [
-  { src: "/images/gal1.jpeg", alt: "Hiking boots", width: 800, height: 600 },
-  { src: "/images/gal2.jpg", alt: "Purple petaled flowers near a mountain", width: 800, height: 600 },
-  { src: "/images/gal3.jpg", alt: "A person pointing at a beige map", width: 800, height: 600 },
-  { src: "/images/gal4.jpg", alt: "Two hikers walking toward a snow-covered mountain", width: 800, height: 600 },
-  { src: "/images/gal5.jpg", alt: "A silver and black coffee mug on a brown wooden table", width: 800, height: 600 },
+  { src: "/images/original_1.jpg", alt: "Real estate property entrance", width: 800, height: 600 },
+  { src: "/images/original_2.jpg", alt: "Real estate flags at plot", width: 800, height: 600 },
+  { src: "/images/original_3.jpg", alt: "Wide view of real estate plot", width: 800, height: 600 },
+  { src: "/images/original_4.jpg", alt: "White event tent at plot", width: 800, height: 600 },
+  { src: "/images/original_5.jpg", alt: "Property entrance side view", width: 800, height: 600 },
 ].map(({ src, width, height, ...rest }) => ({
   src,
   width,

@@ -20,7 +20,7 @@ export default function Gallery() {
   return (
     <section className="py-10 bg-white" id="gallery">
       <h2 className="text-center text-2xl font-semibold text-blue-800 mb-6">
-        Artistic Images 
+        Original Images
       </h2>
 
       <div className="mx-auto max-w-7xl px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -37,7 +37,7 @@ export default function Gallery() {
               loading="lazy"
             />
             <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-              Artistic Image
+              Original Image
             </span>
           </div>
         ))}
