@@ -229,6 +229,7 @@ const RegistrationModal = ({
                   >
                     <option value="">Select Size</option>
                     <option value="145.697 @ 85000">145.697 @ 85000</option>
+                    <option value="148.245 @ 85000">148 @ 85000</option>
                     <option value="158.159 @ 85000">158.159 @ 85000</option>
                     <option value="162.077 @ 85000">162.077 @ 85000</option>
                     <option value="167.233 @ 85000">167.233 @ 85000</option>
