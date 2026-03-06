@@ -12,7 +12,7 @@ export default function RefundPolicy() {
 
           <div className="space-y-6 text-base leading-7 text-gray-700">
             <p className="italic">
-              This Refund Policy governs the terms and conditions for refunds applicable to registrations made on www.deendayaljanawasyojanareg.org for the project RRITAM Peace Valley, a residential plotted development registered under HRERA-PKL-SNP-741-2025 and approved under the Deen Dayal Jan Awas Yojna (DDJAY) of the Government of Haryana. By registering or making any payment on this website, the applicant agrees to be bound by the terms mentioned below.
+              This Refund Policy governs the terms and conditions for refunds applicable to registrations made on www.deendayaljanawasyojnareg.org for the project RRITAM Peace Valley, a residential plotted development registered under HRERA-PKL-SNP-741-2025 and approved under the Deen Dayal Jan Awas Yojna (DDJAY) of the Government of Haryana. By registering or making any payment on this website, the applicant agrees to be bound by the terms mentioned below.
             </p>
 
             <div>

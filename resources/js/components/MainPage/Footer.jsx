@@ -30,7 +30,7 @@ const Footer = ({ openEnquiryPopup }) => {
 
             {/* Disclaimer */}
             <p id="disclaimer" className="text-justify text-white leading-relaxed text-xs md:text-sm">
-              This website deendayaljanawasyojanareg.org is created for information and registration facilitation purposes only for the project RRITAM Peace Valley, a residential plotted development registered under HRERA-PKL-SNP-741-2025 and developed under the Deen Dayal Jan Awas Yojna (Affordable Plotted Housing Policy, 2016) of the Government of Haryana. The content, images, layouts, specifications, distances, connectivity details, pricing, payment plans, amenities, timelines, and other project-related information displayed on this website are indicative in nature and are subject to change as per approvals, statutory requirements, and directives of competent authorities including DTCP Haryana and HRERA.
+              This website deendayaljanawasyojnareg.org is created for information and registration facilitation purposes only for the project RRITAM Peace Valley, a residential plotted development registered under HRERA-PKL-SNP-741-2025 and developed under the Deen Dayal Jan Awas Yojna (Affordable Plotted Housing Policy, 2016) of the Government of Haryana. The content, images, layouts, specifications, distances, connectivity details, pricing, payment plans, amenities, timelines, and other project-related information displayed on this website are indicative in nature and are subject to change as per approvals, statutory requirements, and directives of competent authorities including DTCP Haryana and HRERA.
             </p>
 
             {/* Refund Trust Line */}

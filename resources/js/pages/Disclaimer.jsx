@@ -12,7 +12,7 @@ export default function Disclaimer() {
 
                     <div className="space-y-6 text-base leading-7 text-gray-700">
                         <p>
-                            This website <strong>deendayaljanawasyojanareg.org</strong> is created for information and registration facilitation purposes only for the project <strong>RRITAM Peace Valley</strong>, a residential plotted development registered under <strong>HRERA-PKL-SNP-741-2025</strong> and developed under the Deen Dayal Jan Awas Yojna (Affordable Plotted Housing Policy, 2016) of the Government of Haryana.
+                            This website <strong>deendayaljanawasyojnareg.org</strong> is created for information and registration facilitation purposes only for the project <strong>RRITAM Peace Valley</strong>, a residential plotted development registered under <strong>HRERA-PKL-SNP-741-2025</strong> and developed under the Deen Dayal Jan Awas Yojna (Affordable Plotted Housing Policy, 2016) of the Government of Haryana.
                         </p>
 
                         <p>

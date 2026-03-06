@@ -15,7 +15,7 @@ export default function About() {
           </h1>
 
           <p className="text-base leading-7 mb-6 text-gray-700">
-            This platform is an informational and enquiry channel for residential plotted projects offered under the Deen Dayal Jan Awas Yojana (DDJAY) policy of the Haryana Government.
+            This platform is an informational and enquiry channel for residential plotted projects offered under the Deen Dayal Jan Awas Yojna (DDJAY) policy of the Haryana Government.
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Our Objective</h2>

@@ -16,7 +16,7 @@ const RegistrationBanner = ({ openRegistrationModal }) => {
       {/* Content Section */}
       <div className="relative z-10 text-center md:text-left mb-6 md:mb-0">
         <h2 className="text-xl md:text-2xl font-semibold leading-snug max-w-xl">
-          Deen Dayal Jan Awas Yojana Affordable Residential Plots
+          Deen Dayal Jan Awas Yojna Affordable Residential Plots
         </h2>
         <button
           onClick={() => openRegistrationModal()}

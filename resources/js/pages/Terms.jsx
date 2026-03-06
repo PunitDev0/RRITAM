@@ -12,7 +12,7 @@ export default function Terms() {
 
           <div className="space-y-6 text-base leading-7 text-gray-700">
             <p className="italic">
-              Welcome to www.deendayaljanawasyojanareg.org. By accessing, browsing, or registering on this website, you agree to comply with and be bound by the following Terms & Conditions. If you do not agree with any part of these terms, you are advised not to use this website. This website is intended to provide information and registration facilitation for the project RRITAM Peace Valley, registered under HRERA-PKL-SNP-741-2025 and approved under the Deen Dayal Jan Awas Yojna (DDJAY) of the Government of Haryana.
+              Welcome to www.deendayaljanawasyojnareg.org. By accessing, browsing, or registering on this website, you agree to comply with and be bound by the following Terms & Conditions. If you do not agree with any part of these terms, you are advised not to use this website. This website is intended to provide information and registration facilitation for the project RRITAM Peace Valley, registered under HRERA-PKL-SNP-741-2025 and approved under the Deen Dayal Jan Awas Yojna (DDJAY) of the Government of Haryana.
             </p>
 
             <div>

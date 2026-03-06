@@ -12,7 +12,7 @@ export default function Privacy() {
 
           <div className="space-y-6 text-base leading-7 text-gray-700">
             <p className="italic">
-              This Privacy Policy describes how www.deendayaljanawasyojanareg.org collects, uses, protects, and handles personal information of users who visit or register on this website. By using this website, you consent to the practices described in this Privacy Policy.
+              This Privacy Policy describes how www.deendayaljanawasyojnareg.org collects, uses, protects, and handles personal information of users who visit or register on this website. By using this website, you consent to the practices described in this Privacy Policy.
             </p>
 
             <div>

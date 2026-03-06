@@ -45,11 +45,11 @@ export default function BannerSection({ openRegistrationModal }) {
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
             <div className="max-w-4xl text-center space-y-4 md:space-y-6 px-4">
               <div className="bg-yellow-400 text-black px-3 py-2 md:px-4 md:py-2 mt-4 rounded-md font-bold text-sm sm:text-base md:text-xl inline-block animate-[pulse_2s_ease-in-out_infinite] shadow-[0_0_15px_rgba(250,204,21,0.6)]">
-                ⭐ Special Offer: ₹1500/Sq.Yd. Discount on Govenment & Female Quota! ⭐
+                ⭐ Special Offer: ₹1500/Sq.Yd. Discount on Government & Female Quota! ⭐
               </div>
 
               <p className="text-3xl sm:text-4xl md:text-5xl underline tracking-widest text-green-500 font-extrabold drop-shadow-lg">
-                Deen Dayal Jan Awas Yojana Plots
+                Deen Dayal Jan Awas Yojna Plots
               </p>
               <p className="text-white text-base sm:text-lg md:text-xl font-semibold">
                 RRITAM Peace Valley, Bahalgarh, Sector - 80, Sonipat

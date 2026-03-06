@@ -98,7 +98,7 @@ const MainContent = ({
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <h2 className="h4 h2-md mb-3">Deen Dayal Jan Awas Yojana Affordable Residential Plots</h2>
+              <h2 className="h4 h2-md mb-3">Deen Dayal Jan Awas Yojna Affordable Residential Plots</h2>
               <a href="#" className="btn btn-danger px-4 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#registrationModal">
                 Registration Open
               </a>
@@ -111,7 +111,7 @@ const MainContent = ({
       </div>
 
       <div className="amenities-highlights" id="amenities-highlights">
-        <h2 className="cons-heading pb-5 text-center font-sans">Deen Dayal Jan Awas Yojana Highlights</h2>
+        <h2 className="cons-heading pb-5 text-center font-sans">Deen Dayal Jan Awas Yojna Highlights</h2>
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-6">

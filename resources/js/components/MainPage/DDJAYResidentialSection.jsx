@@ -30,10 +30,10 @@ export default function DDJAYResidentialSection({ openEnquiryPopup }) {
       <div className="container mx-auto">
         {/* Intro */}
         <h2 className="text-2xl md:text-3xl font-semibold text-center font-sans pb-4 text-gray-800">
-           Government of Haryana Housing Policy - DDJAY
+          Government of Haryana Housing Policy - DDJAY
         </h2>
         <p className="text-justify leading-relaxed text-gray-700 text-sm md:text-base max-w-4xl mx-auto mb-10">
-          Deen Dayal Jan Awas Yojana (DDJAY) is a housing policy of the Haryana Government aimed at promoting affordable, well-connected plotted development. Under this policy, residential plotted colonies are developed with planned layouts, proper infrastructure, and regulatory clarity—offering a transparent framework for homebuyers and long-term value.
+          Deen Dayal Jan Awas Yojna (DDJAY) is a housing policy of the Haryana Government aimed at promoting affordable, well-connected plotted development. Under this policy, residential plotted colonies are developed with planned layouts, proper infrastructure, and regulatory clarity—offering a transparent framework for homebuyers and long-term value.
         </p>
 
         {/* The Project Focuses On */}
