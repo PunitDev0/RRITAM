@@ -31,7 +31,7 @@ function CountdownTimer() {
   }, [targetDate]);
 
   if (timeLeft.finished)
-    return <p className="text-blue-600 text-xs">Registration Open!</p>;
+    return <p className="text-blue-600 text-xs">Registration Closed!</p>;
 
   return (
     <div className="text-[18px] sm:text-[22px] font-semibold text-red-600 mt-2">
