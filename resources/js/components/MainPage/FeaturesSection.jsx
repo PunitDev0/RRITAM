@@ -63,7 +63,7 @@ const notices = [
   },
   {
     title: "Loan Facility Available",
-    description: "Registration Open",
+    description: "Registration Closed",
     extra: "Up to 80% Loan availability",
     borderColor: "border-blue-500",
     logos: ["/images/union-bank.png", "/images/icicibank.png"],
