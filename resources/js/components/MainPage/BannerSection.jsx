@@ -17,7 +17,7 @@ export default function BannerSection({ openRegistrationModal }) {
       <div className="news-tricker">
         <marquee width="100%" direction="left" height="" className="text-[17px] font-semibold">
 
-          ATTENTION REGISTRATION START !!!! Book Your Plot under Affordable
+          ATTENTION REGISTRATION CLOSED !!!! Book Your Plot under Affordable
           Housing Policy 2016 for RRITAM PEACE VALLEY *** 33% Quota Reserved for Women
           <span className="bg-green-500 text-white px-2 py-1 mx-2 rounded-sm font-bold shadow-md">
             (Flat ₹1500/Sq.Yd. Discount)
@@ -72,9 +72,9 @@ export default function BannerSection({ openRegistrationModal }) {
               <div className="flex flex-col items-center gap-4 pt-4">
                 <Button
                   onClick={openRegistrationModal}
-                  className="rounded-2xl bg-[#4285f4] text-white cursor-pointer"
+                  className="rounded-2xl bg-red-600 text-white cursor-not-allowed"
                 >
-                  Registration Open
+                  Registration Closed
                 </Button>
                 {/* <p className="text-white text-[10px] opacity-80 -mt-2">
                   <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>

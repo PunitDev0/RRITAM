@@ -50,7 +50,7 @@ const App = ({ flash }) => {
     const modalElement = document.getElementById('registrationModal');
     if (modalElement) {
       const modal = new bootstrap.Modal(modalElement);
-      modal.show();
+      // modal.show();
     }
   };
 

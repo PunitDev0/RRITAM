@@ -20,8 +20,8 @@ const RegistrationBanner = ({ openRegistrationModal }) => {
         </h2>
         <button
           onClick={() => openRegistrationModal()}
-          className="mt-4 bg-[#79a8f2] border border-black text-white font-semibold px-5 py-2 rounded-md transition-all">
-          Registration Open
+          className="mt-4 bg-red-600 border border-black text-white font-semibold px-5 py-2 rounded-md cursor-not-allowed">
+          Registration Closed
         </button>
         <p className="text-white text-[10px] opacity-90 mt-2 block">
           <a href="/disclaimer" className="underline hover:text-blue-200">Refer Disclaimer</a>
